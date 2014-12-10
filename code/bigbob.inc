@@ -22,7 +22,7 @@ define bigbob_one_laser sensor
 define bigbob_laser ranger
 ( 
 	# one line for each sonar [xpos ypos zpos heading]
-	bigbob_one_laser( pose [ -0.45 0 0 0])
+	bigbob_one_laser( pose [ 0.45 0 -0.05 0])
 )
 
 
@@ -33,27 +33,17 @@ define bigbob position
 	# centre of rotation offset
 	origin [0.125 0 0 0]
 	block 
-
 	(	 
-
 		points 6 
-
 		point[0] [0.75 0] 
-
 		point[1] [1 0.25] 
-
 		point[2] [1 0.75] 
-
 		point[3] [0.75 1] 
-
 		point[4] [0 1] 
-
 		point[5] [0 0] 
-
 		z [0 1] 
-
 	) 
-
 	drive "diff"
+	bigbob_laser( ) 
 	bigbob_laser( ) 
 )
