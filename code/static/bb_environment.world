@@ -3,8 +3,8 @@
 # Date: 16/04/2010
 #robots_and_junk.world
 
-include "map.inc"
-include "bigbob.inc"
+include "../map.inc"
+include "../bigbob.inc"
 # configure the GUI window
 window
 (
