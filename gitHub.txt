@@ -1,0 +1,26 @@
+//inicia repositório
+git init .
+
+git config --global user.mail "usuario@email.com"
+
+git config --global user.name "gitUsername"
+
+//pega do server
+git pull "https://github.com/alessandrocollioni/backpack-nr42/"
+
+//comandos para fazer sempre
+	//adiciona arquivos novos ao repositorio
+	git add .
+
+	//remover arquivos removidos localmente
+	git add . -A
+
+	//commit local
+	git commit -m "[commit name]"
+	
+	//commit no server
+	git push "https://github.com/alessandrocollioni/backpack-nr42/"
+
+
+//pega um repositorio q já está no git
+git clone "https://github.com/alessandrocollioni/backpack-nr42/"
