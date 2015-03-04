@@ -12,9 +12,6 @@
  *                                                                            *
  * Para compilar:                                                             *
  * gcc 2Dmapping.c -o 2Dmapping -I/usr/local/include/player-2.1 -L/usr/local/lib -lplayerc -lm -lplayerxdr -lplayererror -lcv -lhighgui -lcxcore -ljpeg
- *
- * gcc 2Dmapping.c -o 2Dmapping -I/usr/local/include/player-3.0 -L/usr/local/lib -lplayerc -lm -lplayerc++ -lplayerc -lopencv_highgui -lopencv_core -ljpeg -lopencv_imgproc
- *
  ******************************************************************************
  */
 
