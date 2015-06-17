@@ -1,0 +1,332 @@
+Robot size: (1.000,1.250,0.000)
+Map size: (500,500), origem: (-250,-250), resolution (m/cell) 1.000)
+Position Goal in X?Position Goal in Y?Position Goal in X?no mapa: ptRobot: (-0.0,-5.9)
+na Iamgem: ptRobot: (248.0,447.0), ptGoal: (150.0,450.0)
+x:  248  y:  447
+x:  247  y:  447
+x:  246  y:  447
+x:  245  y:  447
+x:  244  y:  447
+x:  243  y:  447
+x:  242  y:  447
+x:  241  y:  447
+x:  240  y:  447
+x:  239  y:  447
+x:  238  y:  447
+x:  237  y:  447
+x:  236  y:  447
+x:  235  y:  447
+x:  234  y:  447
+x:  233  y:  447
+x:  232  y:  447
+x:  231  y:  448
+x:  230  y:  448
+x:  229  y:  448
+x:  228  y:  448
+x:  227  y:  448
+x:  226  y:  448
+x:  225  y:  448
+x:  224  y:  448
+x:  223  y:  448
+x:  222  y:  448
+x:  221  y:  448
+x:  220  y:  448
+x:  219  y:  448
+x:  218  y:  448
+x:  217  y:  448
+x:  216  y:  448
+x:  215  y:  448
+x:  214  y:  448
+x:  213  y:  448
+x:  212  y:  448
+x:  211  y:  448
+x:  210  y:  448
+x:  209  y:  448
+x:  208  y:  448
+x:  207  y:  448
+x:  206  y:  448
+x:  205  y:  448
+x:  204  y:  448
+x:  203  y:  448
+x:  202  y:  448
+x:  201  y:  448
+x:  200  y:  448
+x:  199  y:  448
+x:  198  y:  449
+x:  197  y:  449
+x:  196  y:  449
+x:  195  y:  449
+x:  194  y:  449
+x:  193  y:  449
+x:  192  y:  449
+x:  191  y:  449
+x:  190  y:  449
+x:  189  y:  449
+x:  188  y:  449
+x:  187  y:  449
+x:  186  y:  449
+x:  185  y:  449
+x:  184  y:  449
+x:  183  y:  449
+x:  182  y:  449
+x:  181  y:  449
+x:  180  y:  449
+x:  179  y:  449
+x:  178  y:  449
+x:  177  y:  449
+x:  176  y:  449
+x:  175  y:  449
+x:  174  y:  449
+x:  173  y:  449
+x:  172  y:  449
+x:  171  y:  449
+x:  170  y:  449
+x:  169  y:  449
+x:  168  y:  449
+x:  167  y:  449
+x:  166  y:  450
+x:  165  y:  450
+x:  164  y:  450
+x:  163  y:  450
+x:  162  y:  450
+x:  161  y:  450
+x:  160  y:  450
+x:  159  y:  450
+x:  158  y:  450
+x:  157  y:  450
+x:  156  y:  450
+x:  155  y:  450
+x:  154  y:  450
+x:  153  y:  450
+x:  152  y:  450
+x:  151  y:  450
+x:  150  y:  450
+laco waypoint
+Pos_imgToMap( -0.060, 5.910). gx&gy ( -0.060, -5.910)
+done waypoint
+laco waypoint
+Pos_imgToMap( -0.090, 5.910). gx&gy ( -0.090, -5.910)
+done waypoint
+laco waypoint
+Pos_imgToMap( -0.120, 5.910). gx&gy ( -0.120, -5.910)
+done waypoint
+laco waypoint
+Pos_imgToMap( -0.150, 5.910). gx&gy ( -0.150, -5.910)
+done waypoint
+laco waypoint
+Pos_imgToMap( -0.180, 5.910). gx&gy ( -0.180, -5.910)
+done waypoint
+laco waypoint
+Pos_imgToMap( -0.210, 5.910). gx&gy ( -0.210, -5.910)
+done waypoint
+laco waypoint
+Pos_imgToMap( -0.240, 5.910). gx&gy ( -0.240, -5.910)
+done waypoint
+laco waypoint
+Pos_imgToMap( -0.270, 5.910). gx&gy ( -0.270, -5.910)
+done waypoint
+laco waypoint
+Pos_imgToMap( -0.300, 5.910). gx&gy ( -0.300, -5.910)
+done waypoint
+laco waypoint
+Pos_imgToMap( -0.330, 5.910). gx&gy ( -0.330, -5.910)
+done waypoint
+laco waypoint
+Pos_imgToMap( -0.360, 5.910). gx&gy ( -0.360, -5.910)
+laco 1
+laco waypoint
+Pos_imgToMap( -0.390, 5.910). gx&gy ( -0.390, -5.910)
+laco 1
+laco waypoint
+Pos_imgToMap( -0.420, 5.910). gx&gy ( -0.420, -5.910)
+laco 1
+laco waypoint
+Pos_imgToMap( -0.450, 5.910). gx&gy ( -0.450, -5.910)
+laco 1
+laco waypoint
+Pos_imgToMap( -0.480, 5.910). gx&gy ( -0.480, -5.910)
+laco 1
+laco waypoint
+Pos_imgToMap( -0.510, 5.910). gx&gy ( -0.510, -5.910)
+laco 1
+laco waypoint
+Pos_imgToMap( -0.540, 5.910). gx&gy ( -0.540, -5.910)
+laco 1
+laco waypoint
+Pos_imgToMap( -0.570, 5.940). gx&gy ( -0.570, -5.940)
+laco waypoint
+Pos_imgToMap( -0.600, 5.940). gx&gy ( -0.600, -5.940)
+laco 1
+laco waypoint
+Pos_imgToMap( -0.630, 5.940). gx&gy ( -0.630, -5.940)
+laco waypoint
+Pos_imgToMap( -0.660, 5.940). gx&gy ( -0.660, -5.940)
+laco waypoint
+Pos_imgToMap( -0.690, 5.940). gx&gy ( -0.690, -5.940)
+laco waypoint
+Pos_imgToMap( -0.720, 5.940). gx&gy ( -0.720, -5.940)
+laco waypoint
+Pos_imgToMap( -0.750, 5.940). gx&gy ( -0.750, -5.940)
+laco waypoint
+Pos_imgToMap( -0.780, 5.940). gx&gy ( -0.780, -5.940)
+laco 1
+laco waypoint
+Pos_imgToMap( -0.810, 5.940). gx&gy ( -0.810, -5.940)
+laco waypoint
+Pos_imgToMap( -0.840, 5.940). gx&gy ( -0.840, -5.940)
+laco waypoint
+Pos_imgToMap( -0.870, 5.940). gx&gy ( -0.870, -5.940)
+laco waypoint
+Pos_imgToMap( -0.900, 5.940). gx&gy ( -0.900, -5.940)
+laco waypoint
+Pos_imgToMap( -0.930, 5.940). gx&gy ( -0.930, -5.940)
+laco waypoint
+Pos_imgToMap( -0.960, 5.940). gx&gy ( -0.960, -5.940)
+laco waypoint
+Pos_imgToMap( -0.990, 5.940). gx&gy ( -0.990, -5.940)
+laco 1
+laco waypoint
+Pos_imgToMap( -1.020, 5.940). gx&gy ( -1.020, -5.940)
+laco waypoint
+Pos_imgToMap( -1.050, 5.940). gx&gy ( -1.050, -5.940)
+laco waypoint
+Pos_imgToMap( -1.080, 5.940). gx&gy ( -1.080, -5.940)
+laco waypoint
+Pos_imgToMap( -1.110, 5.940). gx&gy ( -1.110, -5.940)
+laco waypoint
+Pos_imgToMap( -1.140, 5.940). gx&gy ( -1.140, -5.940)
+laco waypoint
+Pos_imgToMap( -1.170, 5.940). gx&gy ( -1.170, -5.940)
+laco waypoint
+Pos_imgToMap( -1.200, 5.940). gx&gy ( -1.200, -5.940)
+laco 1
+laco waypoint
+Pos_imgToMap( -1.230, 5.940). gx&gy ( -1.230, -5.940)
+laco waypoint
+Pos_imgToMap( -1.260, 5.940). gx&gy ( -1.260, -5.940)
+laco waypoint
+Pos_imgToMap( -1.290, 5.940). gx&gy ( -1.290, -5.940)
+laco waypoint
+Pos_imgToMap( -1.320, 5.940). gx&gy ( -1.320, -5.940)
+laco waypoint
+Pos_imgToMap( -1.350, 5.940). gx&gy ( -1.350, -5.940)
+laco waypoint
+Pos_imgToMap( -1.380, 5.940). gx&gy ( -1.380, -5.940)
+laco waypoint
+Pos_imgToMap( -1.410, 5.940). gx&gy ( -1.410, -5.940)
+laco 1
+laco waypoint
+Pos_imgToMap( -1.440, 5.940). gx&gy ( -1.440, -5.940)
+laco waypoint
+Pos_imgToMap( -1.470, 5.940). gx&gy ( -1.470, -5.940)
+laco waypoint
+Pos_imgToMap( -1.500, 5.940). gx&gy ( -1.500, -5.940)
+laco waypoint
+Pos_imgToMap( -1.530, 5.940). gx&gy ( -1.530, -5.940)
+laco waypoint
+Pos_imgToMap( -1.560, 5.970). gx&gy ( -1.560, -5.970)
+laco waypoint
+Pos_imgToMap( -1.590, 5.970). gx&gy ( -1.590, -5.970)
+laco waypoint
+Pos_imgToMap( -1.620, 5.970). gx&gy ( -1.620, -5.970)
+laco 1
+laco waypoint
+Pos_imgToMap( -1.650, 5.970). gx&gy ( -1.650, -5.970)
+laco waypoint
+Pos_imgToMap( -1.680, 5.970). gx&gy ( -1.680, -5.970)
+laco waypoint
+Pos_imgToMap( -1.710, 5.970). gx&gy ( -1.710, -5.970)
+laco waypoint
+Pos_imgToMap( -1.740, 5.970). gx&gy ( -1.740, -5.970)
+laco waypoint
+Pos_imgToMap( -1.770, 5.970). gx&gy ( -1.770, -5.970)
+laco waypoint
+Pos_imgToMap( -1.800, 5.970). gx&gy ( -1.800, -5.970)
+laco waypoint
+Pos_imgToMap( -1.830, 5.970). gx&gy ( -1.830, -5.970)
+laco 1
+laco waypoint
+Pos_imgToMap( -1.860, 5.970). gx&gy ( -1.860, -5.970)
+laco waypoint
+Pos_imgToMap( -1.890, 5.970). gx&gy ( -1.890, -5.970)
+laco waypoint
+Pos_imgToMap( -1.920, 5.970). gx&gy ( -1.920, -5.970)
+laco waypoint
+Pos_imgToMap( -1.950, 5.970). gx&gy ( -1.950, -5.970)
+laco waypoint
+Pos_imgToMap( -1.980, 5.970). gx&gy ( -1.980, -5.970)
+laco waypoint
+Pos_imgToMap( -2.010, 5.970). gx&gy ( -2.010, -5.970)
+laco waypoint
+Pos_imgToMap( -2.040, 5.970). gx&gy ( -2.040, -5.970)
+laco waypoint
+Pos_imgToMap( -2.070, 5.970). gx&gy ( -2.070, -5.970)
+laco 1
+laco waypoint
+Pos_imgToMap( -2.100, 5.970). gx&gy ( -2.100, -5.970)
+laco waypoint
+Pos_imgToMap( -2.130, 5.970). gx&gy ( -2.130, -5.970)
+laco waypoint
+Pos_imgToMap( -2.160, 5.970). gx&gy ( -2.160, -5.970)
+laco waypoint
+Pos_imgToMap( -2.190, 5.970). gx&gy ( -2.190, -5.970)
+laco waypoint
+Pos_imgToMap( -2.220, 5.970). gx&gy ( -2.220, -5.970)
+laco waypoint
+Pos_imgToMap( -2.250, 5.970). gx&gy ( -2.250, -5.970)
+laco waypoint
+Pos_imgToMap( -2.280, 5.970). gx&gy ( -2.280, -5.970)
+laco waypoint
+Pos_imgToMap( -2.310, 5.970). gx&gy ( -2.310, -5.970)
+laco 1
+laco waypoint
+Pos_imgToMap( -2.340, 5.970). gx&gy ( -2.340, -5.970)
+laco waypoint
+Pos_imgToMap( -2.370, 5.970). gx&gy ( -2.370, -5.970)
+laco waypoint
+Pos_imgToMap( -2.400, 5.970). gx&gy ( -2.400, -5.970)
+laco waypoint
+Pos_imgToMap( -2.430, 5.970). gx&gy ( -2.430, -5.970)
+laco waypoint
+Pos_imgToMap( -2.460, 5.970). gx&gy ( -2.460, -5.970)
+laco waypoint
+Pos_imgToMap( -2.490, 5.970). gx&gy ( -2.490, -5.970)
+laco waypoint
+Pos_imgToMap( -2.520, 6.000). gx&gy ( -2.520, -6.000)
+laco waypoint
+Pos_imgToMap( -2.550, 6.000). gx&gy ( -2.550, -6.000)
+laco 1
+laco waypoint
+Pos_imgToMap( -2.580, 6.000). gx&gy ( -2.580, -6.000)
+laco waypoint
+Pos_imgToMap( -2.610, 6.000). gx&gy ( -2.610, -6.000)
+laco waypoint
+Pos_imgToMap( -2.640, 6.000). gx&gy ( -2.640, -6.000)
+laco waypoint
+Pos_imgToMap( -2.670, 6.000). gx&gy ( -2.670, -6.000)
+laco waypoint
+Pos_imgToMap( -2.700, 6.000). gx&gy ( -2.700, -6.000)
+laco waypoint
+Pos_imgToMap( -2.730, 6.000). gx&gy ( -2.730, -6.000)
+laco waypoint
+Pos_imgToMap( -2.760, 6.000). gx&gy ( -2.760, -6.000)
+laco waypoint
+Pos_imgToMap( -2.790, 6.000). gx&gy ( -2.790, -6.000)
+laco waypoint
+Pos_imgToMap( -2.820, 6.000). gx&gy ( -2.820, -6.000)
+laco 1
+laco waypoint
+Pos_imgToMap( -2.850, 6.000). gx&gy ( -2.850, -6.000)
+laco waypoint
+Pos_imgToMap( -2.880, 6.000). gx&gy ( -2.880, -6.000)
+laco waypoint
+Pos_imgToMap( -2.910, 6.000). gx&gy ( -2.910, -6.000)
+laco waypoint
+Pos_imgToMap( -2.940, 6.000). gx&gy ( -2.940, -6.000)
+laco waypoint
+Pos_imgToMap( -2.970, 6.000). gx&gy ( -2.970, -6.000)
+laco waypoint
+Pos_imgToMap( -3.000, 6.000). gx&gy ( -3.000, -6.000)
+Robot size: (1.000,1.250,0.000)
+Map size: (500,500), origem: (-250,-250), resolution (m/cell) 1.000)
+Position Goal in X?Position Goal in Y?

@@ -1,0 +1,526 @@
+__init__						      |	init 0 1 3 1
+init  0 1 3 1						      |	heuristic 0 1 3 1
+_heuristic  0 1 3 1					      |	eightCondist 0 1 3 1
+_eightCondist  0 1 3 1					      |	calculateKey 0 1
+_calculateKey  0 1					      |	getRHS 0 1
+_getRHS  0 1						      |	getG 0 1
+_getG  0 1						      |	heuristic 0 1 0 1
+_heuristic  0 1 0 1					      |	eightCondist 0 1 0 1
+_eightCondist  0 1 0 1					      <
+Start node: (0,1)						Start node: (0,1)
+End node: (3,1)							End node: (3,1)
+replan							      |	replan 
+_computeShortestPath					      |	computeShortestPath 
+_getRHS  0 1						      |	getG 0 1
+_getG  0 1						      |	getSucc 0 1
+_getG  0 1						      |	occupied 0 1
+_getSucc  0 1						      |	cost 0 1 1 0
+_occupied  0 1						      |	trueDist 1 0 3 1
+_cost  0 1 1 0						      |	trueDist 0 1 1 0
+_trueDist  1 0 3 1					      |	getG 1 0
+_trueDist  0 1 1 0					      |	heuristic 1 0 3 1
+_getG  1 0						      |	eightCondist 1 0 3 1
+_heuristic  1 0 3 1					      |	close 3.82842712474619 Infinity
+_eightCondist  1 0 3 1					      |	cost 0 1 0 0
+_close  3.82842712475 inf				      |	trueDist 0 0 3 1
+_cost  0 1 0 0						      |	trueDist 0 1 0 0
+_trueDist  0 0 3 1					      |	getG 0 0
+_trueDist  0 1 0 0					      |	heuristic 0 0 3 1
+_getG  0 0						      |	eightCondist 0 0 3 1
+_heuristic  0 0 3 1					      |	close 4.414213562373095 3.82842712474619
+_eightCondist  0 0 3 1					      |	cost 0 1 -1 0
+_close  4.41421356237 3.82842712475			      |	trueDist -1 0 3 1
+_cost  0 1 -1 0						      |	trueDist 0 1 -1 0
+_trueDist  -1 0 3 1					      |	getG -1 0
+_trueDist  0 1 -1 0					      |	heuristic -1 0 3 1
+_getG  -1 0						      |	eightCondist -1 0 3 1
+_heuristic  -1 0 3 1					      |	close 5.82842712474619 3.82842712474619
+_eightCondist  -1 0 3 1					      |	cost 0 1 -1 1
+_close  5.82842712475 3.82842712475			      |	trueDist -1 1 3 1
+_cost  0 1 -1 1						      |	trueDist 0 1 -1 1
+_trueDist  -1 1 3 1					      |	getG -1 1
+_trueDist  0 1 -1 1					      |	heuristic -1 1 3 1
+_getG  -1 1						      |	eightCondist -1 1 3 1
+_heuristic  -1 1 3 1					      |	close 5.0 3.82842712474619
+_eightCondist  -1 1 3 1					      |	cost 0 1 -1 2
+_close  5.0 3.82842712475				      |	trueDist -1 2 3 1
+_cost  0 1 -1 2						      |	trueDist 0 1 -1 2
+_trueDist  -1 2 3 1					      |	getG -1 2
+_trueDist  0 1 -1 2					      |	heuristic -1 2 3 1
+_getG  -1 2						      |	eightCondist -1 2 3 1
+_heuristic  -1 2 3 1					      |	close 5.82842712474619 3.82842712474619
+_eightCondist  -1 2 3 1					      |	cost 0 1 0 2
+_close  5.82842712475 3.82842712475			      |	trueDist 0 2 3 1
+_cost  0 1 0 2						      |	trueDist 0 1 0 2
+_trueDist  0 2 3 1					      |	getG 0 2
+_trueDist  0 1 0 2					      |	heuristic 0 2 3 1
+_getG  0 2						      |	eightCondist 0 2 3 1
+_heuristic  0 2 3 1					      |	close 4.414213562373095 3.82842712474619
+_eightCondist  0 2 3 1					      |	cost 0 1 1 2
+_close  4.41421356237 3.82842712475			      |	trueDist 1 2 3 1
+_cost  0 1 1 2						      |	trueDist 0 1 1 2
+_trueDist  1 2 3 1					      |	getG 1 2
+_trueDist  0 1 1 2					      |	heuristic 1 2 3 1
+_getG  1 2						      |	eightCondist 1 2 3 1
+_heuristic  1 2 3 1					      |	close 3.82842712474619 3.82842712474619
+_eightCondist  1 2 3 1					      |	cost 0 1 1 1
+_close  3.82842712475 3.82842712475			      |	trueDist 1 1 3 1
+_cost  0 1 1 2						      |	trueDist 0 1 1 1
+_trueDist  1 2 3 1					      |	getG 1 1
+_trueDist  0 1 1 2					      |	heuristic 1 1 3 1
+_getG  1 2						      |	eightCondist 1 1 3 1
+_heuristic  1 2 3 1					      |	close 3.0 3.82842712474619
+_eightCondist  1 2 3 1					      |	getSucc 1 1
+_close  3.82842712475 3.82842712475			      |	occupied 1 1
+_getSucc  1 0						      |	cost 1 1 2 0
+_occupied  1 0						      |	trueDist 2 0 3 1
+_cost  1 0 2 -1						      |	trueDist 0 1 2 0
+_trueDist  2 -1 3 1					      |	getG 2 0
+_trueDist  0 1 2 -1					      |	heuristic 2 0 3 1
+_getG  2 -1						      |	eightCondist 2 0 3 1
+_heuristic  2 -1 3 1					      |	close 2.8284271247461903 Infinity
+_eightCondist  2 -1 3 1					      |	cost 1 1 1 0
+_close  3.82842712475 inf				      |	trueDist 1 0 3 1
+_cost  1 0 1 -1						      |	trueDist 0 1 1 0
+_trueDist  1 -1 3 1					      |	getG 1 0
+_trueDist  0 1 1 -1					      |	heuristic 1 0 3 1
+_getG  1 -1						      |	eightCondist 1 0 3 1
+_heuristic  1 -1 3 1					      |	close 3.414213562373095 2.8284271247461903
+_eightCondist  1 -1 3 1					      |	cost 1 1 0 0
+_close  3.82842712475 3.82842712475			      |	trueDist 0 0 3 1
+_cost  1 0 0 -1						      |	trueDist 0 1 0 0
+_trueDist  0 -1 3 1					      |	getG 0 0
+_trueDist  0 1 0 -1					      |	heuristic 0 0 3 1
+_getG  0 -1						      |	eightCondist 0 0 3 1
+_heuristic  0 -1 3 1					      |	close 4.82842712474619 2.8284271247461903
+_eightCondist  0 -1 3 1					      |	cost 1 1 0 1
+_close  5.24264068712 3.82842712475			      |	trueDist 0 1 3 1
+_cost  1 0 0 0						      |	trueDist 0 1 0 1
+_trueDist  0 0 3 1					      |	getG 0 1
+_trueDist  0 1 0 0					      |	close 4.0 2.8284271247461903
+_getG  0 0						      |	cost 1 1 0 2
+_heuristic  0 0 3 1					      |	trueDist 0 2 3 1
+_eightCondist  0 0 3 1					      |	trueDist 0 1 0 2
+_close  4.41421356237 3.82842712475			      |	getG 0 2
+_cost  1 0 0 1						      |	heuristic 0 2 3 1
+_trueDist  0 1 3 1					      |	eightCondist 0 2 3 1
+_trueDist  0 1 0 1					      |	close 4.82842712474619 2.8284271247461903
+_getG  0 1						      |	cost 1 1 1 2
+_heuristic  0 1 3 1					      |	trueDist 1 2 3 1
+_eightCondist  0 1 3 1					      |	trueDist 0 1 1 2
+_close  4.41421356237 3.82842712475			      |	getG 1 2
+_cost  1 0 1 1						      |	heuristic 1 2 3 1
+_trueDist  1 1 3 1					      |	eightCondist 1 2 3 1
+_trueDist  0 1 1 1					      |	close 3.414213562373095 2.8284271247461903
+_getG  1 1						      |	cost 1 1 2 2
+_heuristic  1 1 3 1					      |	trueDist 2 2 3 1
+_eightCondist  1 1 3 1					      |	trueDist 0 1 2 2
+_close  3.0 3.82842712475				      |	getG 2 2
+_cost  1 0 2 1						      |	heuristic 2 2 3 1
+_trueDist  2 1 3 1					      |	eightCondist 2 2 3 1
+_trueDist  0 1 2 1					      |	close 2.8284271247461903 2.8284271247461903
+_getG  2 1						      |	cost 1 1 2 1
+_heuristic  2 1 3 1					      |	trueDist 2 1 3 1
+_eightCondist  2 1 3 1					      |	trueDist 0 1 2 1
+_close  2.41421356237 3.0				      |	getG 2 1
+_cost  1 0 2 1						      |	heuristic 2 1 3 1
+_trueDist  2 1 3 1					      |	eightCondist 2 1 3 1
+_trueDist  0 1 2 1					      |	close 2.0 2.8284271247461903
+_getG  2 1						      |	getSucc 2 1
+_heuristic  2 1 3 1					      |	occupied 2 1
+_eightCondist  2 1 3 1					      |	cost 2 1 3 0
+_close  2.41421356237 2.41421356237			      |	trueDist 3 0 3 1
+_getSucc  2 1						      |	trueDist 0 1 3 0
+_occupied  2 1						      |	getG 3 0
+_cost  2 1 3 0						      |	heuristic 3 0 3 1
+_trueDist  3 0 3 1					      |	eightCondist 3 0 3 1
+_trueDist  0 1 3 0					      |	close 2.414213562373095 Infinity
+_getG  3 0						      |	cost 2 1 2 0
+_heuristic  3 0 3 1					      |	trueDist 2 0 3 1
+_eightCondist  3 0 3 1					      |	trueDist 0 1 2 0
+_close  2.41421356237 inf				      |	getG 2 0
+_cost  2 1 2 0						      |	heuristic 2 0 3 1
+_trueDist  2 0 3 1					      |	eightCondist 2 0 3 1
+_trueDist  0 1 2 0					      |	close 2.414213562373095 2.414213562373095
+_getG  2 0						      |	cost 2 1 1 0
+_heuristic  2 0 3 1					      |	trueDist 1 0 3 1
+_eightCondist  2 0 3 1					      |	trueDist 0 1 1 0
+_close  2.41421356237 2.41421356237			      |	getG 1 0
+_cost  2 1 1 0						      |	heuristic 1 0 3 1
+_trueDist  1 0 3 1					      |	eightCondist 1 0 3 1
+_trueDist  0 1 1 0					      |	close 3.82842712474619 2.414213562373095
+_getG  1 0						      |	cost 2 1 1 1
+_heuristic  1 0 3 1					      |	trueDist 1 1 3 1
+_eightCondist  1 0 3 1					      |	trueDist 0 1 1 1
+_close  3.82842712475 2.41421356237			      |	getG 1 1
+_cost  2 1 1 1						      |	heuristic 1 1 3 1
+_trueDist  1 1 3 1					      |	eightCondist 1 1 3 1
+_trueDist  0 1 1 1					      |	close 3.0 2.414213562373095
+_getG  1 1						      |	cost 2 1 1 2
+_heuristic  1 1 3 1					      |	trueDist 1 2 3 1
+_eightCondist  1 1 3 1					      |	trueDist 0 1 1 2
+_close  3.0 2.41421356237				      |	getG 1 2
+_cost  2 1 1 2						      |	heuristic 1 2 3 1
+_trueDist  1 2 3 1					      |	eightCondist 1 2 3 1
+_trueDist  0 1 1 2					      |	close 3.82842712474619 2.414213562373095
+_getG  1 2						      |	cost 2 1 2 2
+_heuristic  1 2 3 1					      |	trueDist 2 2 3 1
+_eightCondist  1 2 3 1					      |	trueDist 0 1 2 2
+_close  3.82842712475 2.41421356237			      |	getG 2 2
+_cost  2 1 2 2						      |	heuristic 2 2 3 1
+_trueDist  2 2 3 1					      |	eightCondist 2 2 3 1
+_trueDist  0 1 2 2					      |	close 2.414213562373095 2.414213562373095
+_getG  2 2						      |	cost 2 1 3 2
+_heuristic  2 2 3 1					      |	trueDist 3 2 3 1
+_eightCondist  2 2 3 1					      |	trueDist 0 1 3 2
+_close  2.41421356237 2.41421356237			      |	getG 3 2
+_cost  2 1 3 2						      |	heuristic 3 2 3 1
+_trueDist  3 2 3 1					      |	eightCondist 3 2 3 1
+_trueDist  0 1 3 2					      |	close 2.414213562373095 2.414213562373095
+_getG  3 2						      |	cost 2 1 3 1
+_heuristic  3 2 3 1					      |	trueDist 3 1 3 1
+_eightCondist  3 2 3 1					      |	trueDist 0 1 3 1
+_close  2.41421356237 2.41421356237			      |	getG 3 1
+_cost  2 1 3 2						      |	close 1.0 2.414213562373095
+_trueDist  3 2 3 1					      |	updateGoal 3 2
+_trueDist  0 1 3 2					      |	close 1.0 1.0
+_getG  3 2						      |	close 1.0 1.0
+_heuristic  3 2 3 1					      |	heuristic 0 1 3 2
+_eightCondist  3 2 3 1					      |	eightCondist 0 1 3 2
+_close  2.41421356237 2.41421356237			      |	calculateKey 0 1
+_getSucc  2 0						      |	getRHS 0 1
+_occupied  2 0						      |	getG 0 1
+_cost  2 0 3 -1						      |	heuristic 0 1 0 1
+_trueDist  3 -1 3 1					      |	eightCondist 0 1 0 1
+_trueDist  0 1 3 -1					      <
+_getG  3 -1						      <
+_heuristic  3 -1 3 1					      <
+_eightCondist  3 -1 3 1					      <
+_close  3.41421356237 inf				      <
+_cost  2 0 2 -1						      <
+_trueDist  2 -1 3 1					      <
+_trueDist  0 1 2 -1					      <
+_getG  2 -1						      <
+_heuristic  2 -1 3 1					      <
+_eightCondist  2 -1 3 1					      <
+_close  3.41421356237 3.41421356237			      <
+_cost  2 0 1 -1						      <
+_trueDist  1 -1 3 1					      <
+_trueDist  0 1 1 -1					      <
+_getG  1 -1						      <
+_heuristic  1 -1 3 1					      <
+_eightCondist  1 -1 3 1					      <
+_close  4.24264068712 3.41421356237			      <
+_cost  2 0 1 0						      <
+_trueDist  1 0 3 1					      <
+_trueDist  0 1 1 0					      <
+_getG  1 0						      <
+_heuristic  1 0 3 1					      <
+_eightCondist  1 0 3 1					      <
+_close  3.41421356237 3.41421356237			      <
+_cost  2 0 1 1						      <
+_trueDist  1 1 3 1					      <
+_trueDist  0 1 1 1					      <
+_getG  1 1						      <
+_heuristic  1 1 3 1					      <
+_eightCondist  1 1 3 1					      <
+_close  3.41421356237 3.41421356237			      <
+_cost  2 0 2 1						      <
+_trueDist  2 1 3 1					      <
+_trueDist  0 1 2 1					      <
+_getG  2 1						      <
+_heuristic  2 1 3 1					      <
+_eightCondist  2 1 3 1					      <
+_close  2.0 3.41421356237				      <
+_cost  2 0 3 1						      <
+_trueDist  3 1 3 1					      <
+_trueDist  0 1 3 1					      <
+_getG  3 1						      <
+_heuristic  3 1 3 1					      <
+_eightCondist  3 1 3 1					      <
+_close  1.41421356237 2.0				      <
+_cost  2 0 3 1						      <
+_trueDist  3 1 3 1					      <
+_trueDist  0 1 3 1					      <
+_getG  3 1						      <
+_heuristic  3 1 3 1					      <
+_eightCondist  3 1 3 1					      <
+_close  1.41421356237 1.41421356237			      <
+updateGoal  3 2						      <
+_close  1 1						      <
+_close  1 1						      <
+_heuristic  0 1 3 2					      <
+_eightCondist  0 1 3 2					      <
+_calculateKey  0 1					      <
+_getRHS  0 1						      <
+_getG  0 1						      <
+_heuristic  0 1 0 1					      <
+_eightCondist  0 1 0 1					      <
+getPath								getPath
+x:  0  y:  1						      |	x: 0 y: 1
+x:  1  y:  0						      |	x: 1 y: 1
+x:  2  y:  1						      |	x: 2 y: 1
+x:  2  y:  0						      |	x: 3 y: 2
+x:  3  y:  2						      <
+__init__						      |	init 0 1 3 1
+init  0 1 3 1						      |	heuristic 0 1 3 1
+_heuristic  0 1 3 1					      |	eightCondist 0 1 3 1
+_eightCondist  0 1 3 1					      |	calculateKey 0 1
+_calculateKey  0 1					      |	getRHS 0 1
+_getRHS  0 1						      |	getG 0 1
+_getG  0 1						      |	heuristic 0 1 0 1
+_heuristic  0 1 0 1					      |	eightCondist 0 1 0 1
+_eightCondist  0 1 0 1					      <
+Start node: (0,1)						Start node: (0,1)
+End node: (3,1)							End node: (3,1)
+replan							      |	replan 
+_computeShortestPath					      |	computeShortestPath 
+_getG  0 1						      |	getG 0 1
+_getSucc  0 1						      |	getSucc 0 1
+_occupied  0 1						      |	occupied 0 1
+_cost  0 1 1 0						      |	cost 0 1 1 0
+_trueDist  1 0 3 1					      |	trueDist 1 0 3 1
+_trueDist  0 1 1 0					      |	trueDist 0 1 1 0
+_getG  1 0						      |	getG 1 0
+_heuristic  1 0 3 1					      |	heuristic 1 0 3 1
+_eightCondist  1 0 3 1					      |	eightCondist 1 0 3 1
+_close  3.82842712475 inf				      |	close 3.82842712474619 Infinity
+_cost  0 1 0 0						      |	cost 0 1 0 0
+_trueDist  0 0 3 1					      |	trueDist 0 0 3 1
+_trueDist  0 1 0 0					      |	trueDist 0 1 0 0
+_getG  0 0						      |	getG 0 0
+_heuristic  0 0 3 1					      |	heuristic 0 0 3 1
+_eightCondist  0 0 3 1					      |	eightCondist 0 0 3 1
+_close  4.41421356237 3.82842712475			      |	close 4.414213562373095 3.82842712474619
+_cost  0 1 -1 0						      |	cost 0 1 -1 0
+_trueDist  -1 0 3 1					      |	trueDist -1 0 3 1
+_trueDist  0 1 -1 0					      |	trueDist 0 1 -1 0
+_getG  -1 0						      |	getG -1 0
+_heuristic  -1 0 3 1					      |	heuristic -1 0 3 1
+_eightCondist  -1 0 3 1					      |	eightCondist -1 0 3 1
+_close  5.82842712475 3.82842712475			      |	close 5.82842712474619 3.82842712474619
+_cost  0 1 -1 1						      |	cost 0 1 -1 1
+_trueDist  -1 1 3 1					      |	trueDist -1 1 3 1
+_trueDist  0 1 -1 1					      |	trueDist 0 1 -1 1
+_getG  -1 1						      |	getG -1 1
+_heuristic  -1 1 3 1					      |	heuristic -1 1 3 1
+_eightCondist  -1 1 3 1					      |	eightCondist -1 1 3 1
+_close  5.0 3.82842712475				      |	close 5.0 3.82842712474619
+_cost  0 1 -1 2						      |	cost 0 1 -1 2
+_trueDist  -1 2 3 1					      |	trueDist -1 2 3 1
+_trueDist  0 1 -1 2					      |	trueDist 0 1 -1 2
+_getG  -1 2						      |	getG -1 2
+_heuristic  -1 2 3 1					      |	heuristic -1 2 3 1
+_eightCondist  -1 2 3 1					      |	eightCondist -1 2 3 1
+_close  5.82842712475 3.82842712475			      |	close 5.82842712474619 3.82842712474619
+_cost  0 1 0 2						      |	cost 0 1 0 2
+_trueDist  0 2 3 1					      |	trueDist 0 2 3 1
+_trueDist  0 1 0 2					      |	trueDist 0 1 0 2
+_getG  0 2						      |	getG 0 2
+_heuristic  0 2 3 1					      |	heuristic 0 2 3 1
+_eightCondist  0 2 3 1					      |	eightCondist 0 2 3 1
+_close  4.41421356237 3.82842712475			      |	close 4.414213562373095 3.82842712474619
+_cost  0 1 1 2						      |	cost 0 1 1 2
+_trueDist  1 2 3 1					      |	trueDist 1 2 3 1
+_trueDist  0 1 1 2					      |	trueDist 0 1 1 2
+_getG  1 2						      |	getG 1 2
+_heuristic  1 2 3 1					      |	heuristic 1 2 3 1
+_eightCondist  1 2 3 1					      |	eightCondist 1 2 3 1
+_close  3.82842712475 3.82842712475			      |	close 3.82842712474619 3.82842712474619
+_cost  0 1 1 2						      |	cost 0 1 1 1
+_trueDist  1 2 3 1					      |	trueDist 1 1 3 1
+_trueDist  0 1 1 2					      |	trueDist 0 1 1 1
+_getG  1 2						      |	getG 1 1
+_heuristic  1 2 3 1					      |	heuristic 1 1 3 1
+_eightCondist  1 2 3 1					      |	eightCondist 1 1 3 1
+_close  3.82842712475 3.82842712475			      |	close 3.0 3.82842712474619
+_getSucc  1 0						      |	getSucc 1 1
+_occupied  1 0						      |	occupied 1 1
+_cost  1 0 2 -1						      |	cost 1 1 2 0
+_trueDist  2 -1 3 1					      |	trueDist 2 0 3 1
+_trueDist  0 1 2 -1					      |	trueDist 0 1 2 0
+_getG  2 -1						      |	getG 2 0
+_heuristic  2 -1 3 1					      |	heuristic 2 0 3 1
+_eightCondist  2 -1 3 1					      |	eightCondist 2 0 3 1
+_close  3.82842712475 inf				      |	close 2.8284271247461903 Infinity
+_cost  1 0 1 -1						      |	cost 1 1 1 0
+_trueDist  1 -1 3 1					      |	trueDist 1 0 3 1
+_trueDist  0 1 1 -1					      |	trueDist 0 1 1 0
+_getG  1 -1						      |	getG 1 0
+_heuristic  1 -1 3 1					      |	heuristic 1 0 3 1
+_eightCondist  1 -1 3 1					      |	eightCondist 1 0 3 1
+_close  3.82842712475 3.82842712475			      |	close 3.414213562373095 2.8284271247461903
+_cost  1 0 0 -1						      |	cost 1 1 0 0
+_trueDist  0 -1 3 1					      |	trueDist 0 0 3 1
+_trueDist  0 1 0 -1					      |	trueDist 0 1 0 0
+_getG  0 -1						      |	getG 0 0
+_heuristic  0 -1 3 1					      |	heuristic 0 0 3 1
+_eightCondist  0 -1 3 1					      |	eightCondist 0 0 3 1
+_close  5.24264068712 3.82842712475			      |	close 4.82842712474619 2.8284271247461903
+_cost  1 0 0 0						      |	cost 1 1 0 1
+_trueDist  0 0 3 1					      |	trueDist 0 1 3 1
+_trueDist  0 1 0 0					      |	trueDist 0 1 0 1
+_getG  0 0						      |	getG 0 1
+_heuristic  0 0 3 1					      |	close 4.0 2.8284271247461903
+_eightCondist  0 0 3 1					      |	cost 1 1 0 2
+_close  4.41421356237 3.82842712475			      |	trueDist 0 2 3 1
+_cost  1 0 0 1						      |	trueDist 0 1 0 2
+_trueDist  0 1 3 1					      |	getG 0 2
+_trueDist  0 1 0 1					      |	heuristic 0 2 3 1
+_getG  0 1						      |	eightCondist 0 2 3 1
+_heuristic  0 1 3 1					      |	close 4.82842712474619 2.8284271247461903
+_eightCondist  0 1 3 1					      |	cost 1 1 1 2
+_close  4.41421356237 3.82842712475			      |	trueDist 1 2 3 1
+_cost  1 0 1 1						      |	trueDist 0 1 1 2
+_trueDist  1 1 3 1					      |	getG 1 2
+_trueDist  0 1 1 1					      |	heuristic 1 2 3 1
+_getG  1 1						      |	eightCondist 1 2 3 1
+_heuristic  1 1 3 1					      |	close 3.414213562373095 2.8284271247461903
+_eightCondist  1 1 3 1					      |	cost 1 1 2 2
+_close  3.0 3.82842712475				      |	trueDist 2 2 3 1
+_cost  1 0 2 1						      |	trueDist 0 1 2 2
+_trueDist  2 1 3 1					      |	getG 2 2
+_trueDist  0 1 2 1					      |	heuristic 2 2 3 1
+_getG  2 1						      |	eightCondist 2 2 3 1
+_heuristic  2 1 3 1					      |	close 2.8284271247461903 2.8284271247461903
+_eightCondist  2 1 3 1					      |	cost 1 1 2 1
+_close  2.41421356237 3.0				      |	trueDist 2 1 3 1
+_cost  1 0 2 1						      |	trueDist 0 1 2 1
+_trueDist  2 1 3 1					      |	getG 2 1
+_trueDist  0 1 2 1					      |	heuristic 2 1 3 1
+_getG  2 1						      |	eightCondist 2 1 3 1
+_heuristic  2 1 3 1					      |	close 2.0 2.8284271247461903
+_eightCondist  2 1 3 1					      |	getSucc 2 1
+_close  2.41421356237 2.41421356237			      |	occupied 2 1
+_getSucc  2 1						      |	cost 2 1 3 0
+_occupied  2 1						      |	trueDist 3 0 3 1
+_cost  2 1 3 0						      |	trueDist 0 1 3 0
+_trueDist  3 0 3 1					      |	getG 3 0
+_trueDist  0 1 3 0					      |	heuristic 3 0 3 1
+_getG  3 0						      |	eightCondist 3 0 3 1
+_heuristic  3 0 3 1					      |	close 2.414213562373095 Infinity
+_eightCondist  3 0 3 1					      |	cost 2 1 2 0
+_close  2.41421356237 inf				      |	trueDist 2 0 3 1
+_cost  2 1 2 0						      |	trueDist 0 1 2 0
+_trueDist  2 0 3 1					      |	getG 2 0
+_trueDist  0 1 2 0					      |	heuristic 2 0 3 1
+_getG  2 0						      |	eightCondist 2 0 3 1
+_heuristic  2 0 3 1					      |	close 2.414213562373095 2.414213562373095
+_eightCondist  2 0 3 1					      |	cost 2 1 1 0
+_close  2.41421356237 2.41421356237			      |	trueDist 1 0 3 1
+_cost  2 1 1 0						      |	trueDist 0 1 1 0
+_trueDist  1 0 3 1					      |	getG 1 0
+_trueDist  0 1 1 0					      |	heuristic 1 0 3 1
+_getG  1 0						      |	eightCondist 1 0 3 1
+_heuristic  1 0 3 1					      |	close 3.82842712474619 2.414213562373095
+_eightCondist  1 0 3 1					      |	cost 2 1 1 1
+_close  3.82842712475 2.41421356237			      |	trueDist 1 1 3 1
+_cost  2 1 1 1						      |	trueDist 0 1 1 1
+_trueDist  1 1 3 1					      |	getG 1 1
+_trueDist  0 1 1 1					      |	heuristic 1 1 3 1
+_getG  1 1						      |	eightCondist 1 1 3 1
+_heuristic  1 1 3 1					      |	close 3.0 2.414213562373095
+_eightCondist  1 1 3 1					      |	cost 2 1 1 2
+_close  3.0 2.41421356237				      |	trueDist 1 2 3 1
+_cost  2 1 1 2						      |	trueDist 0 1 1 2
+_trueDist  1 2 3 1					      |	getG 1 2
+_trueDist  0 1 1 2					      |	heuristic 1 2 3 1
+_getG  1 2						      |	eightCondist 1 2 3 1
+_heuristic  1 2 3 1					      |	close 3.82842712474619 2.414213562373095
+_eightCondist  1 2 3 1					      |	cost 2 1 2 2
+_close  3.82842712475 2.41421356237			      |	trueDist 2 2 3 1
+_cost  2 1 2 2						      |	trueDist 0 1 2 2
+_trueDist  2 2 3 1					      |	getG 2 2
+_trueDist  0 1 2 2					      |	heuristic 2 2 3 1
+_getG  2 2						      |	eightCondist 2 2 3 1
+_heuristic  2 2 3 1					      |	close 2.414213562373095 2.414213562373095
+_eightCondist  2 2 3 1					      |	cost 2 1 3 2
+_close  2.41421356237 2.41421356237			      |	trueDist 3 2 3 1
+_cost  2 1 3 2						      |	trueDist 0 1 3 2
+_trueDist  3 2 3 1					      |	getG 3 2
+_trueDist  0 1 3 2					      |	heuristic 3 2 3 1
+_getG  3 2						      |	eightCondist 3 2 3 1
+_heuristic  3 2 3 1					      |	close 2.414213562373095 2.414213562373095
+_eightCondist  3 2 3 1					      |	cost 2 1 3 1
+_close  2.41421356237 2.41421356237			      |	trueDist 3 1 3 1
+_cost  2 1 3 2						      |	trueDist 0 1 3 1
+_trueDist  3 2 3 1					      |	getG 3 1
+_trueDist  0 1 3 2					      |	close 1.0 2.414213562373095
+_getG  3 2						      |	updateGoal 3 2
+_heuristic  3 2 3 1					      |	close 1.0 1.0
+_eightCondist  3 2 3 1					      |	close 1.0 1.0
+_close  2.41421356237 2.41421356237			      |	heuristic 0 1 3 2
+_getSucc  2 0						      |	eightCondist 0 1 3 2
+_occupied  2 0						      |	calculateKey 0 1
+_cost  2 0 3 -1						      |	getRHS 0 1
+_trueDist  3 -1 3 1					      |	getG 0 1
+_trueDist  0 1 3 -1					      |	heuristic 0 1 0 1
+_getG  3 -1						      |	eightCondist 0 1 0 1
+_heuristic  3 -1 3 1					      <
+_eightCondist  3 -1 3 1					      <
+_close  3.41421356237 inf				      <
+_cost  2 0 2 -1						      <
+_trueDist  2 -1 3 1					      <
+_trueDist  0 1 2 -1					      <
+_getG  2 -1						      <
+_heuristic  2 -1 3 1					      <
+_eightCondist  2 -1 3 1					      <
+_close  3.41421356237 3.41421356237			      <
+_cost  2 0 1 -1						      <
+_trueDist  1 -1 3 1					      <
+_trueDist  0 1 1 -1					      <
+_getG  1 -1						      <
+_heuristic  1 -1 3 1					      <
+_eightCondist  1 -1 3 1					      <
+_close  4.24264068712 3.41421356237			      <
+_cost  2 0 1 0						      <
+_trueDist  1 0 3 1					      <
+_trueDist  0 1 1 0					      <
+_getG  1 0						      <
+_heuristic  1 0 3 1					      <
+_eightCondist  1 0 3 1					      <
+_close  3.41421356237 3.41421356237			      <
+_cost  2 0 1 1						      <
+_trueDist  1 1 3 1					      <
+_trueDist  0 1 1 1					      <
+_getG  1 1						      <
+_heuristic  1 1 3 1					      <
+_eightCondist  1 1 3 1					      <
+_close  3.41421356237 3.41421356237			      <
+_cost  2 0 2 1						      <
+_trueDist  2 1 3 1					      <
+_trueDist  0 1 2 1					      <
+_getG  2 1						      <
+_heuristic  2 1 3 1					      <
+_eightCondist  2 1 3 1					      <
+_close  2.0 3.41421356237				      <
+_cost  2 0 3 1						      <
+_trueDist  3 1 3 1					      <
+_trueDist  0 1 3 1					      <
+_getG  3 1						      <
+_heuristic  3 1 3 1					      <
+_eightCondist  3 1 3 1					      <
+_close  1.41421356237 2.0				      <
+_cost  2 0 3 1						      <
+_trueDist  3 1 3 1					      <
+_trueDist  0 1 3 1					      <
+_getG  3 1						      <
+_heuristic  3 1 3 1					      <
+_eightCondist  3 1 3 1					      <
+_close  1.41421356237 1.41421356237			      <
+updateGoal  3 2						      <
+_close  1 1						      <
+_close  1 1						      <
+_heuristic  0 1 3 2					      <
+_eightCondist  0 1 3 2					      <
+_calculateKey  0 1					      <
+_getRHS  0 1						      <
+_getG  0 1						      <
+_heuristic  0 1 0 1					      <
+_eightCondist  0 1 0 1					      <
+getPath								getPath
+x:  0  y:  1						      |	x: 0 y: 1
+x:  1  y:  0						      |	x: 1 y: 1
+x:  2  y:  1						      |	x: 2 y: 1
+x:  2  y:  0						      |	x: 3 y: 2
+x:  3  y:  2						      <

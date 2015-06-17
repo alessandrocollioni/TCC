@@ -1,0 +1,264 @@
+__init__
+init  0 1 3 1
+_heuristic  0 1 3 1
+_eightCondist  0 1 3 1
+_calculateKey  0 1
+_getRHS  0 1
+_getG  0 1
+_heuristic  0 1 0 1
+_eightCondist  0 1 0 1
+Start node: (0,1)
+End node: (3,1)
+replan
+_computeShortestPath
+_getRHS  0 1
+_getG  0 1
+_getG  0 1
+_getSucc  0 1
+_occupied  0 1
+_cost  0 1 1 0
+_trueDist  1 0 3 1
+_trueDist  0 1 1 0
+_getG  1 0
+_heuristic  1 0 3 1
+_eightCondist  1 0 3 1
+_close  3.82842712475 inf
+_cost  0 1 0 0
+_trueDist  0 0 3 1
+_trueDist  0 1 0 0
+_getG  0 0
+_heuristic  0 0 3 1
+_eightCondist  0 0 3 1
+_close  4.41421356237 3.82842712475
+_cost  0 1 -1 0
+_trueDist  -1 0 3 1
+_trueDist  0 1 -1 0
+_getG  -1 0
+_heuristic  -1 0 3 1
+_eightCondist  -1 0 3 1
+_close  5.82842712475 3.82842712475
+_cost  0 1 -1 1
+_trueDist  -1 1 3 1
+_trueDist  0 1 -1 1
+_getG  -1 1
+_heuristic  -1 1 3 1
+_eightCondist  -1 1 3 1
+_close  5.0 3.82842712475
+_cost  0 1 -1 2
+_trueDist  -1 2 3 1
+_trueDist  0 1 -1 2
+_getG  -1 2
+_heuristic  -1 2 3 1
+_eightCondist  -1 2 3 1
+_close  5.82842712475 3.82842712475
+_cost  0 1 0 2
+_trueDist  0 2 3 1
+_trueDist  0 1 0 2
+_getG  0 2
+_heuristic  0 2 3 1
+_eightCondist  0 2 3 1
+_close  4.41421356237 3.82842712475
+_cost  0 1 1 2
+_trueDist  1 2 3 1
+_trueDist  0 1 1 2
+_getG  1 2
+_heuristic  1 2 3 1
+_eightCondist  1 2 3 1
+_close  3.82842712475 3.82842712475
+_cost  0 1 1 2
+_trueDist  1 2 3 1
+_trueDist  0 1 1 2
+_getG  1 2
+_heuristic  1 2 3 1
+_eightCondist  1 2 3 1
+_close  3.82842712475 3.82842712475
+_getSucc  1 0
+_occupied  1 0
+_cost  1 0 2 -1
+_trueDist  2 -1 3 1
+_trueDist  0 1 2 -1
+_getG  2 -1
+_heuristic  2 -1 3 1
+_eightCondist  2 -1 3 1
+_close  3.82842712475 inf
+_cost  1 0 1 -1
+_trueDist  1 -1 3 1
+_trueDist  0 1 1 -1
+_getG  1 -1
+_heuristic  1 -1 3 1
+_eightCondist  1 -1 3 1
+_close  3.82842712475 3.82842712475
+_cost  1 0 0 -1
+_trueDist  0 -1 3 1
+_trueDist  0 1 0 -1
+_getG  0 -1
+_heuristic  0 -1 3 1
+_eightCondist  0 -1 3 1
+_close  5.24264068712 3.82842712475
+_cost  1 0 0 0
+_trueDist  0 0 3 1
+_trueDist  0 1 0 0
+_getG  0 0
+_heuristic  0 0 3 1
+_eightCondist  0 0 3 1
+_close  4.41421356237 3.82842712475
+_cost  1 0 0 1
+_trueDist  0 1 3 1
+_trueDist  0 1 0 1
+_getG  0 1
+_heuristic  0 1 3 1
+_eightCondist  0 1 3 1
+_close  4.41421356237 3.82842712475
+_cost  1 0 1 1
+_trueDist  1 1 3 1
+_trueDist  0 1 1 1
+_getG  1 1
+_heuristic  1 1 3 1
+_eightCondist  1 1 3 1
+_close  3.0 3.82842712475
+_cost  1 0 2 1
+_trueDist  2 1 3 1
+_trueDist  0 1 2 1
+_getG  2 1
+_heuristic  2 1 3 1
+_eightCondist  2 1 3 1
+_close  2.41421356237 3.0
+_cost  1 0 2 1
+_trueDist  2 1 3 1
+_trueDist  0 1 2 1
+_getG  2 1
+_heuristic  2 1 3 1
+_eightCondist  2 1 3 1
+_close  2.41421356237 2.41421356237
+_getSucc  2 1
+_occupied  2 1
+_cost  2 1 3 0
+_trueDist  3 0 3 1
+_trueDist  0 1 3 0
+_getG  3 0
+_heuristic  3 0 3 1
+_eightCondist  3 0 3 1
+_close  2.41421356237 inf
+_cost  2 1 2 0
+_trueDist  2 0 3 1
+_trueDist  0 1 2 0
+_getG  2 0
+_heuristic  2 0 3 1
+_eightCondist  2 0 3 1
+_close  2.41421356237 2.41421356237
+_cost  2 1 1 0
+_trueDist  1 0 3 1
+_trueDist  0 1 1 0
+_getG  1 0
+_heuristic  1 0 3 1
+_eightCondist  1 0 3 1
+_close  3.82842712475 2.41421356237
+_cost  2 1 1 1
+_trueDist  1 1 3 1
+_trueDist  0 1 1 1
+_getG  1 1
+_heuristic  1 1 3 1
+_eightCondist  1 1 3 1
+_close  3.0 2.41421356237
+_cost  2 1 1 2
+_trueDist  1 2 3 1
+_trueDist  0 1 1 2
+_getG  1 2
+_heuristic  1 2 3 1
+_eightCondist  1 2 3 1
+_close  3.82842712475 2.41421356237
+_cost  2 1 2 2
+_trueDist  2 2 3 1
+_trueDist  0 1 2 2
+_getG  2 2
+_heuristic  2 2 3 1
+_eightCondist  2 2 3 1
+_close  2.41421356237 2.41421356237
+_cost  2 1 3 2
+_trueDist  3 2 3 1
+_trueDist  0 1 3 2
+_getG  3 2
+_heuristic  3 2 3 1
+_eightCondist  3 2 3 1
+_close  2.41421356237 2.41421356237
+_cost  2 1 3 2
+_trueDist  3 2 3 1
+_trueDist  0 1 3 2
+_getG  3 2
+_heuristic  3 2 3 1
+_eightCondist  3 2 3 1
+_close  2.41421356237 2.41421356237
+_getSucc  2 0
+_occupied  2 0
+_cost  2 0 3 -1
+_trueDist  3 -1 3 1
+_trueDist  0 1 3 -1
+_getG  3 -1
+_heuristic  3 -1 3 1
+_eightCondist  3 -1 3 1
+_close  3.41421356237 inf
+_cost  2 0 2 -1
+_trueDist  2 -1 3 1
+_trueDist  0 1 2 -1
+_getG  2 -1
+_heuristic  2 -1 3 1
+_eightCondist  2 -1 3 1
+_close  3.41421356237 3.41421356237
+_cost  2 0 1 -1
+_trueDist  1 -1 3 1
+_trueDist  0 1 1 -1
+_getG  1 -1
+_heuristic  1 -1 3 1
+_eightCondist  1 -1 3 1
+_close  4.24264068712 3.41421356237
+_cost  2 0 1 0
+_trueDist  1 0 3 1
+_trueDist  0 1 1 0
+_getG  1 0
+_heuristic  1 0 3 1
+_eightCondist  1 0 3 1
+_close  3.41421356237 3.41421356237
+_cost  2 0 1 1
+_trueDist  1 1 3 1
+_trueDist  0 1 1 1
+_getG  1 1
+_heuristic  1 1 3 1
+_eightCondist  1 1 3 1
+_close  3.41421356237 3.41421356237
+_cost  2 0 2 1
+_trueDist  2 1 3 1
+_trueDist  0 1 2 1
+_getG  2 1
+_heuristic  2 1 3 1
+_eightCondist  2 1 3 1
+_close  2.0 3.41421356237
+_cost  2 0 3 1
+_trueDist  3 1 3 1
+_trueDist  0 1 3 1
+_getG  3 1
+_heuristic  3 1 3 1
+_eightCondist  3 1 3 1
+_close  1.41421356237 2.0
+_cost  2 0 3 1
+_trueDist  3 1 3 1
+_trueDist  0 1 3 1
+_getG  3 1
+_heuristic  3 1 3 1
+_eightCondist  3 1 3 1
+_close  1.41421356237 1.41421356237
+updateGoal  3 2
+_close  1 1
+_close  1 1
+_heuristic  0 1 3 2
+_eightCondist  0 1 3 2
+_calculateKey  0 1
+_getRHS  0 1
+_getG  0 1
+_heuristic  0 1 0 1
+_eightCondist  0 1 0 1
+getPath
+x:  0  y:  1
+x:  1  y:  0
+x:  2  y:  1
+x:  2  y:  0
+x:  3  y:  2

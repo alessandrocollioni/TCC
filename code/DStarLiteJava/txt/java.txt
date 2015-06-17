@@ -1,0 +1,2624 @@
+init 0 1 3 1
+heuristic 0 1 3 1
+eightCondist 0 1 3 1
+calculateKey 0 1
+getRHS 0 1
+return rhs RHS 3.0
+getG 0 1
+return G VALOR 3.0
+heuristic 0 1 0 1
+eightCondist 0 1 0 1
+updateCell 2 1 -1.0
+makeNewCell 2 1
+heuristic 2 1 3 1
+eightCondist 2 1 3 1
+updateVertex 2 1
+getSucc 2 1
+occupied 2 1
+getRHS 2 1
+return rhs RHS 1.0
+close 1.0 Infinity
+setRHS 2 1 Infinity
+makeNewCell 2 1
+getG 2 1
+return G VALOR 1.0
+getRHS 2 1
+return rhs RHS Infinity
+close 1.0 Infinity
+insert 2 1
+calculateKey 2 1
+getRHS 2 1
+return rhs RHS Infinity
+getG 2 1
+return G VALOR 1.0
+heuristic 2 1 0 1
+eightCondist 2 1 0 1
+keyHashCode 2 1
+VARIAVEL LOLA 2 1 3.0 1.0
+end updateVertex 2 1
+########## END UPDATE ##########
+Start node: (0,1)
+End node: (3,1)
+replan 
+computeShortestPath 
+calculateKey 0 1
+getRHS 0 1
+return rhs RHS 3.0
+getG 0 1
+return G VALOR 3.0
+heuristic 0 1 0 1
+eightCondist 0 1 0 1
+##### WHILE ##### 1
+getRHS 0 1
+return rhs RHS 3.0
+getG 0 1
+return G VALOR 3.0
+VARIAVEL LOL 2 1 3.0 1.0
+len of openList 1
+while 2 1
+isValid 2 1
+keyHashCode 2 1
+close 1196.0 1196.0
+calculateKey 2 1
+getRHS 2 1
+return rhs RHS Infinity
+getG 2 1
+return G VALOR 1.0
+heuristic 2 1 0 1
+eightCondist 2 1 0 1
+getG 2 1
+return G VALOR 1.0
+getRHS 2 1
+return rhs RHS Infinity
+###### senao ######
+setG 2 1 Infinity
+makeNewCell 2 1
+getPred 2 1
+occupied 3 1
+occupied 3 2
+occupied 2 2
+occupied 1 2
+occupied 1 1
+occupied 1 0
+occupied 2 0
+occupied 3 0
+updateVertex 3 0
+getSucc 3 0
+occupied 3 0
+getG 4 -1
+heuristic 4 -1 3 1
+eightCondist 4 -1 3 1
+return aux G 2.414213562373095
+cost 3 0 4 -1
+getG 3 -1
+heuristic 3 -1 3 1
+eightCondist 3 -1 3 1
+return aux G 2.0
+cost 3 0 3 -1
+getG 2 -1
+heuristic 2 -1 3 1
+eightCondist 2 -1 3 1
+return aux G 2.414213562373095
+cost 3 0 2 -1
+getG 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux G 1.4142135623730951
+cost 3 0 2 0
+getG 2 1
+return G VALOR Infinity
+cost 3 0 2 1
+getG 3 1
+return G VALOR 0.0
+cost 3 0 3 1
+getG 4 1
+heuristic 4 1 3 1
+eightCondist 4 1 3 1
+return aux G 1.0
+cost 3 0 4 1
+getG 4 0
+heuristic 4 0 3 1
+eightCondist 4 0 3 1
+return aux G 1.4142135623730951
+cost 3 0 4 0
+getRHS 3 0
+heuristic 3 0 3 1
+eightCondist 3 0 3 1
+return aux RHS 1.0
+close 1.0 1.0
+getG 3 0
+heuristic 3 0 3 1
+eightCondist 3 0 3 1
+return aux G 1.0
+getRHS 3 0
+heuristic 3 0 3 1
+eightCondist 3 0 3 1
+return aux RHS 1.0
+close 1.0 1.0
+end updateVertex 3 0
+updateVertex 2 0
+getSucc 2 0
+occupied 2 0
+getG 3 -1
+heuristic 3 -1 3 1
+eightCondist 3 -1 3 1
+return aux G 2.0
+cost 2 0 3 -1
+getG 2 -1
+heuristic 2 -1 3 1
+eightCondist 2 -1 3 1
+return aux G 2.414213562373095
+cost 2 0 2 -1
+getG 1 -1
+heuristic 1 -1 3 1
+eightCondist 1 -1 3 1
+return aux G 2.8284271247461903
+cost 2 0 1 -1
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+cost 2 0 1 0
+getG 1 1
+heuristic 1 1 3 1
+eightCondist 1 1 3 1
+return aux G 2.0
+cost 2 0 1 1
+getG 2 1
+return G VALOR Infinity
+cost 2 0 2 1
+getG 3 1
+return G VALOR 0.0
+cost 2 0 3 1
+getG 3 0
+heuristic 3 0 3 1
+eightCondist 3 0 3 1
+return aux G 1.0
+cost 2 0 3 0
+getRHS 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux RHS 1.4142135623730951
+close 1.4142135623730951 1.4142135623730951
+getG 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux G 1.4142135623730951
+getRHS 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux RHS 1.4142135623730951
+close 1.4142135623730951 1.4142135623730951
+end updateVertex 2 0
+updateVertex 1 0
+getSucc 1 0
+occupied 1 0
+getG 2 -1
+heuristic 2 -1 3 1
+eightCondist 2 -1 3 1
+return aux G 2.414213562373095
+cost 1 0 2 -1
+getG 1 -1
+heuristic 1 -1 3 1
+eightCondist 1 -1 3 1
+return aux G 2.8284271247461903
+cost 1 0 1 -1
+getG 0 -1
+heuristic 0 -1 3 1
+eightCondist 0 -1 3 1
+return aux G 3.8284271247461903
+cost 1 0 0 -1
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+cost 1 0 0 0
+getG 0 1
+return G VALOR 3.0
+cost 1 0 0 1
+getG 1 1
+heuristic 1 1 3 1
+eightCondist 1 1 3 1
+return aux G 2.0
+cost 1 0 1 1
+getG 2 1
+return G VALOR Infinity
+cost 1 0 2 1
+getG 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux G 1.4142135623730951
+cost 1 0 2 0
+getRHS 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+getRHS 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+end updateVertex 1 0
+updateVertex 1 1
+getSucc 1 1
+occupied 1 1
+getG 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux G 1.4142135623730951
+cost 1 1 2 0
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+cost 1 1 1 0
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+cost 1 1 0 0
+getG 0 1
+return G VALOR 3.0
+cost 1 1 0 1
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+cost 1 1 0 2
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+cost 1 1 1 2
+getG 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux G 1.4142135623730951
+cost 1 1 2 2
+getG 2 1
+return G VALOR Infinity
+cost 1 1 2 1
+getRHS 1 1
+heuristic 1 1 3 1
+eightCondist 1 1 3 1
+return aux RHS 2.0
+close 2.0 2.8284271247461903
+setRHS 1 1 2.8284271247461903
+makeNewCell 1 1
+heuristic 1 1 3 1
+eightCondist 1 1 3 1
+getG 1 1
+return G VALOR 2.0
+getRHS 1 1
+return rhs RHS 2.8284271247461903
+close 2.0 2.8284271247461903
+insert 1 1
+calculateKey 1 1
+getRHS 1 1
+return rhs RHS 2.8284271247461903
+getG 1 1
+return G VALOR 2.0
+heuristic 1 1 0 1
+eightCondist 1 1 0 1
+keyHashCode 1 1
+VARIAVEL LOLA 1 1 3.0 2.0
+end updateVertex 1 1
+updateVertex 1 2
+getSucc 1 2
+occupied 1 2
+getG 2 1
+return G VALOR Infinity
+cost 1 2 2 1
+getG 1 1
+return G VALOR 2.0
+cost 1 2 1 1
+getG 0 1
+return G VALOR 3.0
+cost 1 2 0 1
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+cost 1 2 0 2
+getG 0 3
+heuristic 0 3 3 1
+eightCondist 0 3 3 1
+return aux G 3.8284271247461903
+cost 1 2 0 3
+getG 1 3
+heuristic 1 3 3 1
+eightCondist 1 3 3 1
+return aux G 2.8284271247461903
+cost 1 2 1 3
+getG 2 3
+heuristic 2 3 3 1
+eightCondist 2 3 3 1
+return aux G 2.414213562373095
+cost 1 2 2 3
+getG 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux G 1.4142135623730951
+cost 1 2 2 2
+getRHS 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+getRHS 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+end updateVertex 1 2
+updateVertex 2 2
+getSucc 2 2
+occupied 2 2
+getG 3 1
+return G VALOR 0.0
+cost 2 2 3 1
+getG 2 1
+return G VALOR Infinity
+cost 2 2 2 1
+getG 1 1
+return G VALOR 2.0
+cost 2 2 1 1
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+cost 2 2 1 2
+getG 1 3
+heuristic 1 3 3 1
+eightCondist 1 3 3 1
+return aux G 2.8284271247461903
+cost 2 2 1 3
+getG 2 3
+heuristic 2 3 3 1
+eightCondist 2 3 3 1
+return aux G 2.414213562373095
+cost 2 2 2 3
+getG 3 3
+heuristic 3 3 3 1
+eightCondist 3 3 3 1
+return aux G 2.0
+cost 2 2 3 3
+getG 3 2
+heuristic 3 2 3 1
+eightCondist 3 2 3 1
+return aux G 1.0
+cost 2 2 3 2
+getRHS 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux RHS 1.4142135623730951
+close 1.4142135623730951 1.4142135623730951
+getG 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux G 1.4142135623730951
+getRHS 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux RHS 1.4142135623730951
+close 1.4142135623730951 1.4142135623730951
+end updateVertex 2 2
+updateVertex 3 2
+getSucc 3 2
+occupied 3 2
+getG 4 1
+heuristic 4 1 3 1
+eightCondist 4 1 3 1
+return aux G 1.0
+cost 3 2 4 1
+getG 3 1
+return G VALOR 0.0
+cost 3 2 3 1
+getG 2 1
+return G VALOR Infinity
+cost 3 2 2 1
+getG 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux G 1.4142135623730951
+cost 3 2 2 2
+getG 2 3
+heuristic 2 3 3 1
+eightCondist 2 3 3 1
+return aux G 2.414213562373095
+cost 3 2 2 3
+getG 3 3
+heuristic 3 3 3 1
+eightCondist 3 3 3 1
+return aux G 2.0
+cost 3 2 3 3
+getG 4 3
+heuristic 4 3 3 1
+eightCondist 4 3 3 1
+return aux G 2.414213562373095
+cost 3 2 4 3
+getG 4 2
+heuristic 4 2 3 1
+eightCondist 4 2 3 1
+return aux G 1.4142135623730951
+cost 3 2 4 2
+getRHS 3 2
+heuristic 3 2 3 1
+eightCondist 3 2 3 1
+return aux RHS 1.0
+close 1.0 1.0
+getG 3 2
+heuristic 3 2 3 1
+eightCondist 3 2 3 1
+return aux G 1.0
+getRHS 3 2
+heuristic 3 2 3 1
+eightCondist 3 2 3 1
+return aux RHS 1.0
+close 1.0 1.0
+end updateVertex 3 2
+updateVertex 3 1
+getG 3 1
+return G VALOR 0.0
+getRHS 3 1
+return rhs RHS 0.0
+close 0.0 0.0
+end updateVertex 3 1
+updateVertex 2 1
+getSucc 2 1
+occupied 2 1
+getRHS 2 1
+return rhs RHS Infinity
+close Infinity Infinity
+getG 2 1
+return G VALOR Infinity
+getRHS 2 1
+return rhs RHS Infinity
+close Infinity Infinity
+end updateVertex 2 1
+###### end senao ######
+calculateKey 0 1
+getRHS 0 1
+return rhs RHS 3.0
+getG 0 1
+return G VALOR 3.0
+heuristic 0 1 0 1
+eightCondist 0 1 0 1
+##### WHILE ##### 2
+getRHS 0 1
+return rhs RHS 3.0
+getG 0 1
+return G VALOR 3.0
+VARIAVEL LOL 1 1 3.0 2.0
+len of openList 1
+while 1 1
+isValid 1 1
+keyHashCode 1 1
+close 2389.0 2389.0
+calculateKey 1 1
+getRHS 1 1
+return rhs RHS 2.8284271247461903
+getG 1 1
+return G VALOR 2.0
+heuristic 1 1 0 1
+eightCondist 1 1 0 1
+getG 1 1
+return G VALOR 2.0
+getRHS 1 1
+return rhs RHS 2.8284271247461903
+###### senao ######
+setG 1 1 Infinity
+makeNewCell 1 1
+getPred 1 1
+occupied 2 1
+occupied 2 2
+occupied 1 2
+occupied 0 2
+occupied 0 1
+occupied 0 0
+occupied 1 0
+occupied 2 0
+updateVertex 2 0
+getSucc 2 0
+occupied 2 0
+getG 3 -1
+heuristic 3 -1 3 1
+eightCondist 3 -1 3 1
+return aux G 2.0
+cost 2 0 3 -1
+getG 2 -1
+heuristic 2 -1 3 1
+eightCondist 2 -1 3 1
+return aux G 2.414213562373095
+cost 2 0 2 -1
+getG 1 -1
+heuristic 1 -1 3 1
+eightCondist 1 -1 3 1
+return aux G 2.8284271247461903
+cost 2 0 1 -1
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+cost 2 0 1 0
+getG 1 1
+return G VALOR Infinity
+cost 2 0 1 1
+getG 2 1
+return G VALOR Infinity
+cost 2 0 2 1
+getG 3 1
+return G VALOR 0.0
+cost 2 0 3 1
+getG 3 0
+heuristic 3 0 3 1
+eightCondist 3 0 3 1
+return aux G 1.0
+cost 2 0 3 0
+getRHS 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux RHS 1.4142135623730951
+close 1.4142135623730951 1.4142135623730951
+getG 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux G 1.4142135623730951
+getRHS 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux RHS 1.4142135623730951
+close 1.4142135623730951 1.4142135623730951
+end updateVertex 2 0
+updateVertex 1 0
+getSucc 1 0
+occupied 1 0
+getG 2 -1
+heuristic 2 -1 3 1
+eightCondist 2 -1 3 1
+return aux G 2.414213562373095
+cost 1 0 2 -1
+getG 1 -1
+heuristic 1 -1 3 1
+eightCondist 1 -1 3 1
+return aux G 2.8284271247461903
+cost 1 0 1 -1
+getG 0 -1
+heuristic 0 -1 3 1
+eightCondist 0 -1 3 1
+return aux G 3.8284271247461903
+cost 1 0 0 -1
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+cost 1 0 0 0
+getG 0 1
+return G VALOR 3.0
+cost 1 0 0 1
+getG 1 1
+return G VALOR Infinity
+cost 1 0 1 1
+getG 2 1
+return G VALOR Infinity
+cost 1 0 2 1
+getG 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux G 1.4142135623730951
+cost 1 0 2 0
+getRHS 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+getRHS 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+end updateVertex 1 0
+updateVertex 0 0
+getSucc 0 0
+occupied 0 0
+getG 1 -1
+heuristic 1 -1 3 1
+eightCondist 1 -1 3 1
+return aux G 2.8284271247461903
+cost 0 0 1 -1
+getG 0 -1
+heuristic 0 -1 3 1
+eightCondist 0 -1 3 1
+return aux G 3.8284271247461903
+cost 0 0 0 -1
+getG -1 -1
+heuristic -1 -1 3 1
+eightCondist -1 -1 3 1
+return aux G 4.82842712474619
+cost 0 0 -1 -1
+getG -1 0
+heuristic -1 0 3 1
+eightCondist -1 0 3 1
+return aux G 4.414213562373095
+cost 0 0 -1 0
+getG -1 1
+heuristic -1 1 3 1
+eightCondist -1 1 3 1
+return aux G 4.0
+cost 0 0 -1 1
+getG 0 1
+return G VALOR 3.0
+cost 0 0 0 1
+getG 1 1
+return G VALOR Infinity
+cost 0 0 1 1
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+cost 0 0 1 0
+getRHS 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux RHS 3.414213562373095
+close 3.414213562373095 3.414213562373095
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+getRHS 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux RHS 3.414213562373095
+close 3.414213562373095 3.414213562373095
+end updateVertex 0 0
+updateVertex 0 1
+getSucc 0 1
+occupied 0 1
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+cost 0 1 1 0
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+cost 0 1 0 0
+getG -1 0
+heuristic -1 0 3 1
+eightCondist -1 0 3 1
+return aux G 4.414213562373095
+cost 0 1 -1 0
+getG -1 1
+heuristic -1 1 3 1
+eightCondist -1 1 3 1
+return aux G 4.0
+cost 0 1 -1 1
+getG -1 2
+heuristic -1 2 3 1
+eightCondist -1 2 3 1
+return aux G 4.414213562373095
+cost 0 1 -1 2
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+cost 0 1 0 2
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+cost 0 1 1 2
+getG 1 1
+return G VALOR Infinity
+cost 0 1 1 1
+getRHS 0 1
+return rhs RHS 3.0
+close 3.0 3.82842712474619
+setRHS 0 1 3.82842712474619
+makeNewCell 0 1
+getG 0 1
+return G VALOR 3.0
+getRHS 0 1
+return rhs RHS 3.82842712474619
+close 3.0 3.82842712474619
+insert 0 1
+calculateKey 0 1
+getRHS 0 1
+return rhs RHS 3.82842712474619
+getG 0 1
+return G VALOR 3.0
+heuristic 0 1 0 1
+eightCondist 0 1 0 1
+keyHashCode 0 1
+VARIAVEL LOLA 0 1 3.0 3.0
+end updateVertex 0 1
+updateVertex 0 2
+getSucc 0 2
+occupied 0 2
+getG 1 1
+return G VALOR Infinity
+cost 0 2 1 1
+getG 0 1
+return G VALOR 3.0
+cost 0 2 0 1
+getG -1 1
+heuristic -1 1 3 1
+eightCondist -1 1 3 1
+return aux G 4.0
+cost 0 2 -1 1
+getG -1 2
+heuristic -1 2 3 1
+eightCondist -1 2 3 1
+return aux G 4.414213562373095
+cost 0 2 -1 2
+getG -1 3
+heuristic -1 3 3 1
+eightCondist -1 3 3 1
+return aux G 4.82842712474619
+cost 0 2 -1 3
+getG 0 3
+heuristic 0 3 3 1
+eightCondist 0 3 3 1
+return aux G 3.8284271247461903
+cost 0 2 0 3
+getG 1 3
+heuristic 1 3 3 1
+eightCondist 1 3 3 1
+return aux G 2.8284271247461903
+cost 0 2 1 3
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+cost 0 2 1 2
+getRHS 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux RHS 3.414213562373095
+close 3.414213562373095 3.414213562373095
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+getRHS 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux RHS 3.414213562373095
+close 3.414213562373095 3.414213562373095
+end updateVertex 0 2
+updateVertex 1 2
+getSucc 1 2
+occupied 1 2
+getG 2 1
+return G VALOR Infinity
+cost 1 2 2 1
+getG 1 1
+return G VALOR Infinity
+cost 1 2 1 1
+getG 0 1
+return G VALOR 3.0
+cost 1 2 0 1
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+cost 1 2 0 2
+getG 0 3
+heuristic 0 3 3 1
+eightCondist 0 3 3 1
+return aux G 3.8284271247461903
+cost 1 2 0 3
+getG 1 3
+heuristic 1 3 3 1
+eightCondist 1 3 3 1
+return aux G 2.8284271247461903
+cost 1 2 1 3
+getG 2 3
+heuristic 2 3 3 1
+eightCondist 2 3 3 1
+return aux G 2.414213562373095
+cost 1 2 2 3
+getG 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux G 1.4142135623730951
+cost 1 2 2 2
+getRHS 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+getRHS 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+end updateVertex 1 2
+updateVertex 2 2
+getSucc 2 2
+occupied 2 2
+getG 3 1
+return G VALOR 0.0
+cost 2 2 3 1
+getG 2 1
+return G VALOR Infinity
+cost 2 2 2 1
+getG 1 1
+return G VALOR Infinity
+cost 2 2 1 1
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+cost 2 2 1 2
+getG 1 3
+heuristic 1 3 3 1
+eightCondist 1 3 3 1
+return aux G 2.8284271247461903
+cost 2 2 1 3
+getG 2 3
+heuristic 2 3 3 1
+eightCondist 2 3 3 1
+return aux G 2.414213562373095
+cost 2 2 2 3
+getG 3 3
+heuristic 3 3 3 1
+eightCondist 3 3 3 1
+return aux G 2.0
+cost 2 2 3 3
+getG 3 2
+heuristic 3 2 3 1
+eightCondist 3 2 3 1
+return aux G 1.0
+cost 2 2 3 2
+getRHS 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux RHS 1.4142135623730951
+close 1.4142135623730951 1.4142135623730951
+getG 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux G 1.4142135623730951
+getRHS 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux RHS 1.4142135623730951
+close 1.4142135623730951 1.4142135623730951
+end updateVertex 2 2
+updateVertex 1 1
+getSucc 1 1
+occupied 1 1
+getG 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux G 1.4142135623730951
+cost 1 1 2 0
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+cost 1 1 1 0
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+cost 1 1 0 0
+getG 0 1
+return G VALOR 3.0
+cost 1 1 0 1
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+cost 1 1 0 2
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+cost 1 1 1 2
+getG 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux G 1.4142135623730951
+cost 1 1 2 2
+getG 2 1
+return G VALOR Infinity
+cost 1 1 2 1
+getRHS 1 1
+return rhs RHS 2.8284271247461903
+close 2.8284271247461903 2.8284271247461903
+getG 1 1
+return G VALOR Infinity
+getRHS 1 1
+return rhs RHS 2.8284271247461903
+close Infinity 2.8284271247461903
+insert 1 1
+calculateKey 1 1
+getRHS 1 1
+return rhs RHS 2.8284271247461903
+getG 1 1
+return G VALOR Infinity
+heuristic 1 1 0 1
+eightCondist 1 1 0 1
+keyHashCode 1 1
+VARIAVEL LOLA 0 1 3.0 3.0
+VARIAVEL LOLA 1 1 3.8284271247461903 2.8284271247461903
+end updateVertex 1 1
+###### end senao ######
+calculateKey 0 1
+getRHS 0 1
+return rhs RHS 3.82842712474619
+getG 0 1
+return G VALOR 3.0
+heuristic 0 1 0 1
+eightCondist 0 1 0 1
+getRHS 0 1
+return rhs RHS 3.82842712474619
+getG 0 1
+return G VALOR 3.0
+##### WHILE ##### 3
+getRHS 0 1
+return rhs RHS 3.82842712474619
+getG 0 1
+return G VALOR 3.0
+VARIAVEL LOL 0 1 3.0 3.0
+VARIAVEL LOL 1 1 3.8284271247461903 2.8284271247461903
+len of openList 2
+while 0 1
+isValid 0 1
+keyHashCode 0 1
+close 3582.0 3582.0
+calculateKey 0 1
+getRHS 0 1
+return rhs RHS 3.82842712474619
+getG 0 1
+return G VALOR 3.0
+heuristic 0 1 0 1
+eightCondist 0 1 0 1
+getG 0 1
+return G VALOR 3.0
+getRHS 0 1
+return rhs RHS 3.82842712474619
+###### senao ######
+setG 0 1 Infinity
+makeNewCell 0 1
+getPred 0 1
+occupied 1 1
+occupied 1 2
+occupied 0 2
+occupied -1 2
+occupied -1 1
+occupied -1 0
+occupied 0 0
+occupied 1 0
+updateVertex 1 0
+getSucc 1 0
+occupied 1 0
+getG 2 -1
+heuristic 2 -1 3 1
+eightCondist 2 -1 3 1
+return aux G 2.414213562373095
+cost 1 0 2 -1
+getG 1 -1
+heuristic 1 -1 3 1
+eightCondist 1 -1 3 1
+return aux G 2.8284271247461903
+cost 1 0 1 -1
+getG 0 -1
+heuristic 0 -1 3 1
+eightCondist 0 -1 3 1
+return aux G 3.8284271247461903
+cost 1 0 0 -1
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+cost 1 0 0 0
+getG 0 1
+return G VALOR Infinity
+cost 1 0 0 1
+getG 1 1
+return G VALOR Infinity
+cost 1 0 1 1
+getG 2 1
+return G VALOR Infinity
+cost 1 0 2 1
+getG 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux G 1.4142135623730951
+cost 1 0 2 0
+getRHS 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+getRHS 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+end updateVertex 1 0
+updateVertex 0 0
+getSucc 0 0
+occupied 0 0
+getG 1 -1
+heuristic 1 -1 3 1
+eightCondist 1 -1 3 1
+return aux G 2.8284271247461903
+cost 0 0 1 -1
+getG 0 -1
+heuristic 0 -1 3 1
+eightCondist 0 -1 3 1
+return aux G 3.8284271247461903
+cost 0 0 0 -1
+getG -1 -1
+heuristic -1 -1 3 1
+eightCondist -1 -1 3 1
+return aux G 4.82842712474619
+cost 0 0 -1 -1
+getG -1 0
+heuristic -1 0 3 1
+eightCondist -1 0 3 1
+return aux G 4.414213562373095
+cost 0 0 -1 0
+getG -1 1
+heuristic -1 1 3 1
+eightCondist -1 1 3 1
+return aux G 4.0
+cost 0 0 -1 1
+getG 0 1
+return G VALOR Infinity
+cost 0 0 0 1
+getG 1 1
+return G VALOR Infinity
+cost 0 0 1 1
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+cost 0 0 1 0
+getRHS 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux RHS 3.414213562373095
+close 3.414213562373095 3.414213562373095
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+getRHS 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux RHS 3.414213562373095
+close 3.414213562373095 3.414213562373095
+end updateVertex 0 0
+updateVertex -1 0
+getSucc -1 0
+occupied -1 0
+getG 0 -1
+heuristic 0 -1 3 1
+eightCondist 0 -1 3 1
+return aux G 3.8284271247461903
+cost -1 0 0 -1
+getG -1 -1
+heuristic -1 -1 3 1
+eightCondist -1 -1 3 1
+return aux G 4.82842712474619
+cost -1 0 -1 -1
+getG -2 -1
+heuristic -2 -1 3 1
+eightCondist -2 -1 3 1
+return aux G 5.82842712474619
+cost -1 0 -2 -1
+getG -2 0
+heuristic -2 0 3 1
+eightCondist -2 0 3 1
+return aux G 5.414213562373095
+cost -1 0 -2 0
+getG -2 1
+heuristic -2 1 3 1
+eightCondist -2 1 3 1
+return aux G 5.0
+cost -1 0 -2 1
+getG -1 1
+heuristic -1 1 3 1
+eightCondist -1 1 3 1
+return aux G 4.0
+cost -1 0 -1 1
+getG 0 1
+return G VALOR Infinity
+cost -1 0 0 1
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+cost -1 0 0 0
+getRHS -1 0
+heuristic -1 0 3 1
+eightCondist -1 0 3 1
+return aux RHS 4.414213562373095
+close 4.414213562373095 4.414213562373095
+getG -1 0
+heuristic -1 0 3 1
+eightCondist -1 0 3 1
+return aux G 4.414213562373095
+getRHS -1 0
+heuristic -1 0 3 1
+eightCondist -1 0 3 1
+return aux RHS 4.414213562373095
+close 4.414213562373095 4.414213562373095
+end updateVertex -1 0
+updateVertex -1 1
+getSucc -1 1
+occupied -1 1
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+cost -1 1 0 0
+getG -1 0
+heuristic -1 0 3 1
+eightCondist -1 0 3 1
+return aux G 4.414213562373095
+cost -1 1 -1 0
+getG -2 0
+heuristic -2 0 3 1
+eightCondist -2 0 3 1
+return aux G 5.414213562373095
+cost -1 1 -2 0
+getG -2 1
+heuristic -2 1 3 1
+eightCondist -2 1 3 1
+return aux G 5.0
+cost -1 1 -2 1
+getG -2 2
+heuristic -2 2 3 1
+eightCondist -2 2 3 1
+return aux G 5.414213562373095
+cost -1 1 -2 2
+getG -1 2
+heuristic -1 2 3 1
+eightCondist -1 2 3 1
+return aux G 4.414213562373095
+cost -1 1 -1 2
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+cost -1 1 0 2
+getG 0 1
+return G VALOR Infinity
+cost -1 1 0 1
+getRHS -1 1
+heuristic -1 1 3 1
+eightCondist -1 1 3 1
+return aux RHS 4.0
+close 4.0 4.82842712474619
+setRHS -1 1 4.82842712474619
+makeNewCell -1 1
+heuristic -1 1 3 1
+eightCondist -1 1 3 1
+getG -1 1
+return G VALOR 4.0
+getRHS -1 1
+return rhs RHS 4.82842712474619
+close 4.0 4.82842712474619
+insert -1 1
+calculateKey -1 1
+getRHS -1 1
+return rhs RHS 4.82842712474619
+getG -1 1
+return G VALOR 4.0
+heuristic -1 1 0 1
+eightCondist -1 1 0 1
+keyHashCode -1 1
+VARIAVEL LOLA 1 1 3.8284271247461903 2.8284271247461903
+VARIAVEL LOLA -1 1 5.0 4.0
+end updateVertex -1 1
+updateVertex -1 2
+getSucc -1 2
+occupied -1 2
+getG 0 1
+return G VALOR Infinity
+cost -1 2 0 1
+getG -1 1
+return G VALOR 4.0
+cost -1 2 -1 1
+getG -2 1
+heuristic -2 1 3 1
+eightCondist -2 1 3 1
+return aux G 5.0
+cost -1 2 -2 1
+getG -2 2
+heuristic -2 2 3 1
+eightCondist -2 2 3 1
+return aux G 5.414213562373095
+cost -1 2 -2 2
+getG -2 3
+heuristic -2 3 3 1
+eightCondist -2 3 3 1
+return aux G 5.82842712474619
+cost -1 2 -2 3
+getG -1 3
+heuristic -1 3 3 1
+eightCondist -1 3 3 1
+return aux G 4.82842712474619
+cost -1 2 -1 3
+getG 0 3
+heuristic 0 3 3 1
+eightCondist 0 3 3 1
+return aux G 3.8284271247461903
+cost -1 2 0 3
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+cost -1 2 0 2
+getRHS -1 2
+heuristic -1 2 3 1
+eightCondist -1 2 3 1
+return aux RHS 4.414213562373095
+close 4.414213562373095 4.414213562373095
+getG -1 2
+heuristic -1 2 3 1
+eightCondist -1 2 3 1
+return aux G 4.414213562373095
+getRHS -1 2
+heuristic -1 2 3 1
+eightCondist -1 2 3 1
+return aux RHS 4.414213562373095
+close 4.414213562373095 4.414213562373095
+end updateVertex -1 2
+updateVertex 0 2
+getSucc 0 2
+occupied 0 2
+getG 1 1
+return G VALOR Infinity
+cost 0 2 1 1
+getG 0 1
+return G VALOR Infinity
+cost 0 2 0 1
+getG -1 1
+return G VALOR 4.0
+cost 0 2 -1 1
+getG -1 2
+heuristic -1 2 3 1
+eightCondist -1 2 3 1
+return aux G 4.414213562373095
+cost 0 2 -1 2
+getG -1 3
+heuristic -1 3 3 1
+eightCondist -1 3 3 1
+return aux G 4.82842712474619
+cost 0 2 -1 3
+getG 0 3
+heuristic 0 3 3 1
+eightCondist 0 3 3 1
+return aux G 3.8284271247461903
+cost 0 2 0 3
+getG 1 3
+heuristic 1 3 3 1
+eightCondist 1 3 3 1
+return aux G 2.8284271247461903
+cost 0 2 1 3
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+cost 0 2 1 2
+getRHS 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux RHS 3.414213562373095
+close 3.414213562373095 3.414213562373095
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+getRHS 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux RHS 3.414213562373095
+close 3.414213562373095 3.414213562373095
+end updateVertex 0 2
+updateVertex 1 2
+getSucc 1 2
+occupied 1 2
+getG 2 1
+return G VALOR Infinity
+cost 1 2 2 1
+getG 1 1
+return G VALOR Infinity
+cost 1 2 1 1
+getG 0 1
+return G VALOR Infinity
+cost 1 2 0 1
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+cost 1 2 0 2
+getG 0 3
+heuristic 0 3 3 1
+eightCondist 0 3 3 1
+return aux G 3.8284271247461903
+cost 1 2 0 3
+getG 1 3
+heuristic 1 3 3 1
+eightCondist 1 3 3 1
+return aux G 2.8284271247461903
+cost 1 2 1 3
+getG 2 3
+heuristic 2 3 3 1
+eightCondist 2 3 3 1
+return aux G 2.414213562373095
+cost 1 2 2 3
+getG 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux G 1.4142135623730951
+cost 1 2 2 2
+getRHS 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+getRHS 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+end updateVertex 1 2
+updateVertex 1 1
+getSucc 1 1
+occupied 1 1
+getG 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux G 1.4142135623730951
+cost 1 1 2 0
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+cost 1 1 1 0
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+cost 1 1 0 0
+getG 0 1
+return G VALOR Infinity
+cost 1 1 0 1
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+cost 1 1 0 2
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+cost 1 1 1 2
+getG 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux G 1.4142135623730951
+cost 1 1 2 2
+getG 2 1
+return G VALOR Infinity
+cost 1 1 2 1
+getRHS 1 1
+return rhs RHS 2.8284271247461903
+close 2.8284271247461903 2.8284271247461903
+getG 1 1
+return G VALOR Infinity
+getRHS 1 1
+return rhs RHS 2.8284271247461903
+close Infinity 2.8284271247461903
+insert 1 1
+calculateKey 1 1
+getRHS 1 1
+return rhs RHS 2.8284271247461903
+getG 1 1
+return G VALOR Infinity
+heuristic 1 1 0 1
+eightCondist 1 1 0 1
+keyHashCode 1 1
+VARIAVEL LOLA 1 1 3.8284271247461903 2.8284271247461903
+VARIAVEL LOLA -1 1 5.0 4.0
+VARIAVEL LOLA 1 1 3.8284271247461903 2.8284271247461903
+end updateVertex 1 1
+updateVertex 0 1
+getSucc 0 1
+occupied 0 1
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+cost 0 1 1 0
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+cost 0 1 0 0
+getG -1 0
+heuristic -1 0 3 1
+eightCondist -1 0 3 1
+return aux G 4.414213562373095
+cost 0 1 -1 0
+getG -1 1
+return G VALOR 4.0
+cost 0 1 -1 1
+getG -1 2
+heuristic -1 2 3 1
+eightCondist -1 2 3 1
+return aux G 4.414213562373095
+cost 0 1 -1 2
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+cost 0 1 0 2
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+cost 0 1 1 2
+getG 1 1
+return G VALOR Infinity
+cost 0 1 1 1
+getRHS 0 1
+return rhs RHS 3.82842712474619
+close 3.82842712474619 3.82842712474619
+getG 0 1
+return G VALOR Infinity
+getRHS 0 1
+return rhs RHS 3.82842712474619
+close Infinity 3.82842712474619
+insert 0 1
+calculateKey 0 1
+getRHS 0 1
+return rhs RHS 3.82842712474619
+getG 0 1
+return G VALOR Infinity
+heuristic 0 1 0 1
+eightCondist 0 1 0 1
+keyHashCode 0 1
+VARIAVEL LOLA 1 1 3.8284271247461903 2.8284271247461903
+VARIAVEL LOLA 0 1 3.82842712474619 3.82842712474619
+VARIAVEL LOLA 1 1 3.8284271247461903 2.8284271247461903
+VARIAVEL LOLA -1 1 5.0 4.0
+end updateVertex 0 1
+###### end senao ######
+calculateKey 0 1
+getRHS 0 1
+return rhs RHS 3.82842712474619
+getG 0 1
+return G VALOR Infinity
+heuristic 0 1 0 1
+eightCondist 0 1 0 1
+##### WHILE ##### 4
+getRHS 0 1
+return rhs RHS 3.82842712474619
+getG 0 1
+return G VALOR Infinity
+VARIAVEL LOL 1 1 3.8284271247461903 2.8284271247461903
+VARIAVEL LOL 0 1 3.82842712474619 3.82842712474619
+VARIAVEL LOL 1 1 3.8284271247461903 2.8284271247461903
+VARIAVEL LOL -1 1 5.0 4.0
+len of openList 4
+while 1 1
+isValid 1 1
+keyHashCode 1 1
+close 3378.14208984375 3378.14208984375
+calculateKey 1 1
+getRHS 1 1
+return rhs RHS 2.8284271247461903
+getG 1 1
+return G VALOR Infinity
+heuristic 1 1 0 1
+eightCondist 1 1 0 1
+getG 1 1
+return G VALOR Infinity
+getRHS 1 1
+return rhs RHS 2.8284271247461903
+###### G>RHS ######
+getRHS 1 1
+return rhs RHS 2.8284271247461903
+setG 1 1 2.8284271247461903
+makeNewCell 1 1
+getPred 1 1
+occupied 2 1
+occupied 2 2
+occupied 1 2
+occupied 0 2
+occupied 0 1
+occupied 0 0
+occupied 1 0
+occupied 2 0
+updateVertex 2 0
+getSucc 2 0
+occupied 2 0
+getG 3 -1
+heuristic 3 -1 3 1
+eightCondist 3 -1 3 1
+return aux G 2.0
+cost 2 0 3 -1
+getG 2 -1
+heuristic 2 -1 3 1
+eightCondist 2 -1 3 1
+return aux G 2.414213562373095
+cost 2 0 2 -1
+getG 1 -1
+heuristic 1 -1 3 1
+eightCondist 1 -1 3 1
+return aux G 2.8284271247461903
+cost 2 0 1 -1
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+cost 2 0 1 0
+getG 1 1
+return G VALOR 2.8284271247461903
+cost 2 0 1 1
+getG 2 1
+return G VALOR Infinity
+cost 2 0 2 1
+getG 3 1
+return G VALOR 0.0
+cost 2 0 3 1
+getG 3 0
+heuristic 3 0 3 1
+eightCondist 3 0 3 1
+return aux G 1.0
+cost 2 0 3 0
+getRHS 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux RHS 1.4142135623730951
+close 1.4142135623730951 1.4142135623730951
+getG 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux G 1.4142135623730951
+getRHS 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux RHS 1.4142135623730951
+close 1.4142135623730951 1.4142135623730951
+end updateVertex 2 0
+updateVertex 1 0
+getSucc 1 0
+occupied 1 0
+getG 2 -1
+heuristic 2 -1 3 1
+eightCondist 2 -1 3 1
+return aux G 2.414213562373095
+cost 1 0 2 -1
+getG 1 -1
+heuristic 1 -1 3 1
+eightCondist 1 -1 3 1
+return aux G 2.8284271247461903
+cost 1 0 1 -1
+getG 0 -1
+heuristic 0 -1 3 1
+eightCondist 0 -1 3 1
+return aux G 3.8284271247461903
+cost 1 0 0 -1
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+cost 1 0 0 0
+getG 0 1
+return G VALOR Infinity
+cost 1 0 0 1
+getG 1 1
+return G VALOR 2.8284271247461903
+cost 1 0 1 1
+getG 2 1
+return G VALOR Infinity
+cost 1 0 2 1
+getG 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux G 1.4142135623730951
+cost 1 0 2 0
+getRHS 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+getRHS 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+end updateVertex 1 0
+updateVertex 0 0
+getSucc 0 0
+occupied 0 0
+getG 1 -1
+heuristic 1 -1 3 1
+eightCondist 1 -1 3 1
+return aux G 2.8284271247461903
+cost 0 0 1 -1
+getG 0 -1
+heuristic 0 -1 3 1
+eightCondist 0 -1 3 1
+return aux G 3.8284271247461903
+cost 0 0 0 -1
+getG -1 -1
+heuristic -1 -1 3 1
+eightCondist -1 -1 3 1
+return aux G 4.82842712474619
+cost 0 0 -1 -1
+getG -1 0
+heuristic -1 0 3 1
+eightCondist -1 0 3 1
+return aux G 4.414213562373095
+cost 0 0 -1 0
+getG -1 1
+return G VALOR 4.0
+cost 0 0 -1 1
+getG 0 1
+return G VALOR Infinity
+cost 0 0 0 1
+getG 1 1
+return G VALOR 2.8284271247461903
+cost 0 0 1 1
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+cost 0 0 1 0
+getRHS 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux RHS 3.414213562373095
+close 3.414213562373095 3.414213562373095
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+getRHS 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux RHS 3.414213562373095
+close 3.414213562373095 3.414213562373095
+end updateVertex 0 0
+updateVertex 0 1
+getSucc 0 1
+occupied 0 1
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+cost 0 1 1 0
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+cost 0 1 0 0
+getG -1 0
+heuristic -1 0 3 1
+eightCondist -1 0 3 1
+return aux G 4.414213562373095
+cost 0 1 -1 0
+getG -1 1
+return G VALOR 4.0
+cost 0 1 -1 1
+getG -1 2
+heuristic -1 2 3 1
+eightCondist -1 2 3 1
+return aux G 4.414213562373095
+cost 0 1 -1 2
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+cost 0 1 0 2
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+cost 0 1 1 2
+getG 1 1
+return G VALOR 2.8284271247461903
+cost 0 1 1 1
+getRHS 0 1
+return rhs RHS 3.82842712474619
+close 3.82842712474619 3.82842712474619
+getG 0 1
+return G VALOR Infinity
+getRHS 0 1
+return rhs RHS 3.82842712474619
+close Infinity 3.82842712474619
+insert 0 1
+calculateKey 0 1
+getRHS 0 1
+return rhs RHS 3.82842712474619
+getG 0 1
+return G VALOR Infinity
+heuristic 0 1 0 1
+eightCondist 0 1 0 1
+keyHashCode 0 1
+VARIAVEL LOLA 1 1 3.8284271247461903 2.8284271247461903
+VARIAVEL LOLA 0 1 3.82842712474619 3.82842712474619
+VARIAVEL LOLA -1 1 5.0 4.0
+VARIAVEL LOLA 0 1 3.82842712474619 3.82842712474619
+end updateVertex 0 1
+updateVertex 0 2
+getSucc 0 2
+occupied 0 2
+getG 1 1
+return G VALOR 2.8284271247461903
+cost 0 2 1 1
+getG 0 1
+return G VALOR Infinity
+cost 0 2 0 1
+getG -1 1
+return G VALOR 4.0
+cost 0 2 -1 1
+getG -1 2
+heuristic -1 2 3 1
+eightCondist -1 2 3 1
+return aux G 4.414213562373095
+cost 0 2 -1 2
+getG -1 3
+heuristic -1 3 3 1
+eightCondist -1 3 3 1
+return aux G 4.82842712474619
+cost 0 2 -1 3
+getG 0 3
+heuristic 0 3 3 1
+eightCondist 0 3 3 1
+return aux G 3.8284271247461903
+cost 0 2 0 3
+getG 1 3
+heuristic 1 3 3 1
+eightCondist 1 3 3 1
+return aux G 2.8284271247461903
+cost 0 2 1 3
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+cost 0 2 1 2
+getRHS 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux RHS 3.414213562373095
+close 3.414213562373095 3.414213562373095
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+getRHS 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux RHS 3.414213562373095
+close 3.414213562373095 3.414213562373095
+end updateVertex 0 2
+updateVertex 1 2
+getSucc 1 2
+occupied 1 2
+getG 2 1
+return G VALOR Infinity
+cost 1 2 2 1
+getG 1 1
+return G VALOR 2.8284271247461903
+cost 1 2 1 1
+getG 0 1
+return G VALOR Infinity
+cost 1 2 0 1
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+cost 1 2 0 2
+getG 0 3
+heuristic 0 3 3 1
+eightCondist 0 3 3 1
+return aux G 3.8284271247461903
+cost 1 2 0 3
+getG 1 3
+heuristic 1 3 3 1
+eightCondist 1 3 3 1
+return aux G 2.8284271247461903
+cost 1 2 1 3
+getG 2 3
+heuristic 2 3 3 1
+eightCondist 2 3 3 1
+return aux G 2.414213562373095
+cost 1 2 2 3
+getG 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux G 1.4142135623730951
+cost 1 2 2 2
+getRHS 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+getRHS 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+end updateVertex 1 2
+updateVertex 2 2
+getSucc 2 2
+occupied 2 2
+getG 3 1
+return G VALOR 0.0
+cost 2 2 3 1
+getG 2 1
+return G VALOR Infinity
+cost 2 2 2 1
+getG 1 1
+return G VALOR 2.8284271247461903
+cost 2 2 1 1
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+cost 2 2 1 2
+getG 1 3
+heuristic 1 3 3 1
+eightCondist 1 3 3 1
+return aux G 2.8284271247461903
+cost 2 2 1 3
+getG 2 3
+heuristic 2 3 3 1
+eightCondist 2 3 3 1
+return aux G 2.414213562373095
+cost 2 2 2 3
+getG 3 3
+heuristic 3 3 3 1
+eightCondist 3 3 3 1
+return aux G 2.0
+cost 2 2 3 3
+getG 3 2
+heuristic 3 2 3 1
+eightCondist 3 2 3 1
+return aux G 1.0
+cost 2 2 3 2
+getRHS 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux RHS 1.4142135623730951
+close 1.4142135623730951 1.4142135623730951
+getG 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux G 1.4142135623730951
+getRHS 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux RHS 1.4142135623730951
+close 1.4142135623730951 1.4142135623730951
+end updateVertex 2 2
+###### end G>RHS ######
+calculateKey 0 1
+getRHS 0 1
+return rhs RHS 3.82842712474619
+getG 0 1
+return G VALOR Infinity
+heuristic 0 1 0 1
+eightCondist 0 1 0 1
+##### WHILE ##### 5
+getRHS 0 1
+return rhs RHS 3.82842712474619
+getG 0 1
+return G VALOR Infinity
+VARIAVEL LOL 1 1 3.8284271247461903 2.8284271247461903
+VARIAVEL LOL 0 1 3.82842712474619 3.82842712474619
+VARIAVEL LOL -1 1 5.0 4.0
+VARIAVEL LOL 0 1 3.82842712474619 3.82842712474619
+len of openList 4
+while 1 1
+isValid 1 1
+VARIAVEL LOL 0 1 3.82842712474619 3.82842712474619
+VARIAVEL LOL 0 1 3.82842712474619 3.82842712474619
+VARIAVEL LOL -1 1 5.0 4.0
+len of openList 3
+while 0 1
+isValid 0 1
+keyHashCode 0 1
+close 4571.14208984375 4571.14208984375
+calculateKey 0 1
+getRHS 0 1
+return rhs RHS 3.82842712474619
+getG 0 1
+return G VALOR Infinity
+heuristic 0 1 0 1
+eightCondist 0 1 0 1
+getG 0 1
+return G VALOR Infinity
+getRHS 0 1
+return rhs RHS 3.82842712474619
+###### G>RHS ######
+getRHS 0 1
+return rhs RHS 3.82842712474619
+setG 0 1 3.82842712474619
+makeNewCell 0 1
+getPred 0 1
+occupied 1 1
+occupied 1 2
+occupied 0 2
+occupied -1 2
+occupied -1 1
+occupied -1 0
+occupied 0 0
+occupied 1 0
+updateVertex 1 0
+getSucc 1 0
+occupied 1 0
+getG 2 -1
+heuristic 2 -1 3 1
+eightCondist 2 -1 3 1
+return aux G 2.414213562373095
+cost 1 0 2 -1
+getG 1 -1
+heuristic 1 -1 3 1
+eightCondist 1 -1 3 1
+return aux G 2.8284271247461903
+cost 1 0 1 -1
+getG 0 -1
+heuristic 0 -1 3 1
+eightCondist 0 -1 3 1
+return aux G 3.8284271247461903
+cost 1 0 0 -1
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+cost 1 0 0 0
+getG 0 1
+return G VALOR 3.82842712474619
+cost 1 0 0 1
+getG 1 1
+return G VALOR 2.8284271247461903
+cost 1 0 1 1
+getG 2 1
+return G VALOR Infinity
+cost 1 0 2 1
+getG 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux G 1.4142135623730951
+cost 1 0 2 0
+getRHS 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+getRHS 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+end updateVertex 1 0
+updateVertex 0 0
+getSucc 0 0
+occupied 0 0
+getG 1 -1
+heuristic 1 -1 3 1
+eightCondist 1 -1 3 1
+return aux G 2.8284271247461903
+cost 0 0 1 -1
+getG 0 -1
+heuristic 0 -1 3 1
+eightCondist 0 -1 3 1
+return aux G 3.8284271247461903
+cost 0 0 0 -1
+getG -1 -1
+heuristic -1 -1 3 1
+eightCondist -1 -1 3 1
+return aux G 4.82842712474619
+cost 0 0 -1 -1
+getG -1 0
+heuristic -1 0 3 1
+eightCondist -1 0 3 1
+return aux G 4.414213562373095
+cost 0 0 -1 0
+getG -1 1
+return G VALOR 4.0
+cost 0 0 -1 1
+getG 0 1
+return G VALOR 3.82842712474619
+cost 0 0 0 1
+getG 1 1
+return G VALOR 2.8284271247461903
+cost 0 0 1 1
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+cost 0 0 1 0
+getRHS 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux RHS 3.414213562373095
+close 3.414213562373095 3.414213562373095
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+getRHS 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux RHS 3.414213562373095
+close 3.414213562373095 3.414213562373095
+end updateVertex 0 0
+updateVertex -1 0
+getSucc -1 0
+occupied -1 0
+getG 0 -1
+heuristic 0 -1 3 1
+eightCondist 0 -1 3 1
+return aux G 3.8284271247461903
+cost -1 0 0 -1
+getG -1 -1
+heuristic -1 -1 3 1
+eightCondist -1 -1 3 1
+return aux G 4.82842712474619
+cost -1 0 -1 -1
+getG -2 -1
+heuristic -2 -1 3 1
+eightCondist -2 -1 3 1
+return aux G 5.82842712474619
+cost -1 0 -2 -1
+getG -2 0
+heuristic -2 0 3 1
+eightCondist -2 0 3 1
+return aux G 5.414213562373095
+cost -1 0 -2 0
+getG -2 1
+heuristic -2 1 3 1
+eightCondist -2 1 3 1
+return aux G 5.0
+cost -1 0 -2 1
+getG -1 1
+return G VALOR 4.0
+cost -1 0 -1 1
+getG 0 1
+return G VALOR 3.82842712474619
+cost -1 0 0 1
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+cost -1 0 0 0
+getRHS -1 0
+heuristic -1 0 3 1
+eightCondist -1 0 3 1
+return aux RHS 4.414213562373095
+close 4.414213562373095 4.414213562373095
+getG -1 0
+heuristic -1 0 3 1
+eightCondist -1 0 3 1
+return aux G 4.414213562373095
+getRHS -1 0
+heuristic -1 0 3 1
+eightCondist -1 0 3 1
+return aux RHS 4.414213562373095
+close 4.414213562373095 4.414213562373095
+end updateVertex -1 0
+updateVertex -1 1
+getSucc -1 1
+occupied -1 1
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+cost -1 1 0 0
+getG -1 0
+heuristic -1 0 3 1
+eightCondist -1 0 3 1
+return aux G 4.414213562373095
+cost -1 1 -1 0
+getG -2 0
+heuristic -2 0 3 1
+eightCondist -2 0 3 1
+return aux G 5.414213562373095
+cost -1 1 -2 0
+getG -2 1
+heuristic -2 1 3 1
+eightCondist -2 1 3 1
+return aux G 5.0
+cost -1 1 -2 1
+getG -2 2
+heuristic -2 2 3 1
+eightCondist -2 2 3 1
+return aux G 5.414213562373095
+cost -1 1 -2 2
+getG -1 2
+heuristic -1 2 3 1
+eightCondist -1 2 3 1
+return aux G 4.414213562373095
+cost -1 1 -1 2
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+cost -1 1 0 2
+getG 0 1
+return G VALOR 3.82842712474619
+cost -1 1 0 1
+getRHS -1 1
+return rhs RHS 4.82842712474619
+close 4.82842712474619 4.82842712474619
+getG -1 1
+return G VALOR 4.0
+getRHS -1 1
+return rhs RHS 4.82842712474619
+close 4.0 4.82842712474619
+insert -1 1
+calculateKey -1 1
+getRHS -1 1
+return rhs RHS 4.82842712474619
+getG -1 1
+return G VALOR 4.0
+heuristic -1 1 0 1
+eightCondist -1 1 0 1
+keyHashCode -1 1
+VARIAVEL LOLA 0 1 3.82842712474619 3.82842712474619
+VARIAVEL LOLA -1 1 5.0 4.0
+VARIAVEL LOLA -1 1 5.0 4.0
+end updateVertex -1 1
+updateVertex -1 2
+getSucc -1 2
+occupied -1 2
+getG 0 1
+return G VALOR 3.82842712474619
+cost -1 2 0 1
+getG -1 1
+return G VALOR 4.0
+cost -1 2 -1 1
+getG -2 1
+heuristic -2 1 3 1
+eightCondist -2 1 3 1
+return aux G 5.0
+cost -1 2 -2 1
+getG -2 2
+heuristic -2 2 3 1
+eightCondist -2 2 3 1
+return aux G 5.414213562373095
+cost -1 2 -2 2
+getG -2 3
+heuristic -2 3 3 1
+eightCondist -2 3 3 1
+return aux G 5.82842712474619
+cost -1 2 -2 3
+getG -1 3
+heuristic -1 3 3 1
+eightCondist -1 3 3 1
+return aux G 4.82842712474619
+cost -1 2 -1 3
+getG 0 3
+heuristic 0 3 3 1
+eightCondist 0 3 3 1
+return aux G 3.8284271247461903
+cost -1 2 0 3
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+cost -1 2 0 2
+getRHS -1 2
+heuristic -1 2 3 1
+eightCondist -1 2 3 1
+return aux RHS 4.414213562373095
+close 4.414213562373095 4.414213562373095
+getG -1 2
+heuristic -1 2 3 1
+eightCondist -1 2 3 1
+return aux G 4.414213562373095
+getRHS -1 2
+heuristic -1 2 3 1
+eightCondist -1 2 3 1
+return aux RHS 4.414213562373095
+close 4.414213562373095 4.414213562373095
+end updateVertex -1 2
+updateVertex 0 2
+getSucc 0 2
+occupied 0 2
+getG 1 1
+return G VALOR 2.8284271247461903
+cost 0 2 1 1
+getG 0 1
+return G VALOR 3.82842712474619
+cost 0 2 0 1
+getG -1 1
+return G VALOR 4.0
+cost 0 2 -1 1
+getG -1 2
+heuristic -1 2 3 1
+eightCondist -1 2 3 1
+return aux G 4.414213562373095
+cost 0 2 -1 2
+getG -1 3
+heuristic -1 3 3 1
+eightCondist -1 3 3 1
+return aux G 4.82842712474619
+cost 0 2 -1 3
+getG 0 3
+heuristic 0 3 3 1
+eightCondist 0 3 3 1
+return aux G 3.8284271247461903
+cost 0 2 0 3
+getG 1 3
+heuristic 1 3 3 1
+eightCondist 1 3 3 1
+return aux G 2.8284271247461903
+cost 0 2 1 3
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+cost 0 2 1 2
+getRHS 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux RHS 3.414213562373095
+close 3.414213562373095 3.414213562373095
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+getRHS 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux RHS 3.414213562373095
+close 3.414213562373095 3.414213562373095
+end updateVertex 0 2
+updateVertex 1 2
+getSucc 1 2
+occupied 1 2
+getG 2 1
+return G VALOR Infinity
+cost 1 2 2 1
+getG 1 1
+return G VALOR 2.8284271247461903
+cost 1 2 1 1
+getG 0 1
+return G VALOR 3.82842712474619
+cost 1 2 0 1
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+cost 1 2 0 2
+getG 0 3
+heuristic 0 3 3 1
+eightCondist 0 3 3 1
+return aux G 3.8284271247461903
+cost 1 2 0 3
+getG 1 3
+heuristic 1 3 3 1
+eightCondist 1 3 3 1
+return aux G 2.8284271247461903
+cost 1 2 1 3
+getG 2 3
+heuristic 2 3 3 1
+eightCondist 2 3 3 1
+return aux G 2.414213562373095
+cost 1 2 2 3
+getG 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux G 1.4142135623730951
+cost 1 2 2 2
+getRHS 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+getRHS 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux RHS 2.414213562373095
+close 2.414213562373095 2.414213562373095
+end updateVertex 1 2
+updateVertex 1 1
+getSucc 1 1
+occupied 1 1
+getG 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux G 1.4142135623730951
+cost 1 1 2 0
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+cost 1 1 1 0
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+cost 1 1 0 0
+getG 0 1
+return G VALOR 3.82842712474619
+cost 1 1 0 1
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+cost 1 1 0 2
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+cost 1 1 1 2
+getG 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux G 1.4142135623730951
+cost 1 1 2 2
+getG 2 1
+return G VALOR Infinity
+cost 1 1 2 1
+getRHS 1 1
+return rhs RHS 2.8284271247461903
+close 2.8284271247461903 2.8284271247461903
+getG 1 1
+return G VALOR 2.8284271247461903
+getRHS 1 1
+return rhs RHS 2.8284271247461903
+close 2.8284271247461903 2.8284271247461903
+end updateVertex 1 1
+###### end G>RHS ######
+calculateKey 0 1
+getRHS 0 1
+return rhs RHS 3.82842712474619
+getG 0 1
+return G VALOR 3.82842712474619
+heuristic 0 1 0 1
+eightCondist 0 1 0 1
+getRHS 0 1
+return rhs RHS 3.82842712474619
+getG 0 1
+return G VALOR 3.82842712474619
+end from computeShortestPath
+getG 0 1
+return G VALOR 3.82842712474619
+getSucc 0 1
+occupied 0 1
+cost 0 1 1 0
+trueDist 1 0 3 1
+trueDist 0 1 1 0
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+close 3.82842712474619 Infinity
+cost 0 1 0 0
+trueDist 0 0 3 1
+trueDist 0 1 0 0
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+close 4.414213562373095 3.82842712474619
+cost 0 1 -1 0
+trueDist -1 0 3 1
+trueDist 0 1 -1 0
+getG -1 0
+heuristic -1 0 3 1
+eightCondist -1 0 3 1
+return aux G 4.414213562373095
+close 5.82842712474619 3.82842712474619
+cost 0 1 -1 1
+trueDist -1 1 3 1
+trueDist 0 1 -1 1
+getG -1 1
+return G VALOR 4.0
+close 5.0 3.82842712474619
+cost 0 1 -1 2
+trueDist -1 2 3 1
+trueDist 0 1 -1 2
+getG -1 2
+heuristic -1 2 3 1
+eightCondist -1 2 3 1
+return aux G 4.414213562373095
+close 5.82842712474619 3.82842712474619
+cost 0 1 0 2
+trueDist 0 2 3 1
+trueDist 0 1 0 2
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+close 4.414213562373095 3.82842712474619
+cost 0 1 1 2
+trueDist 1 2 3 1
+trueDist 0 1 1 2
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+close 3.82842712474619 3.82842712474619
+cost 0 1 1 1
+trueDist 1 1 3 1
+trueDist 0 1 1 1
+getG 1 1
+return G VALOR 2.8284271247461903
+close 3.8284271247461903 3.82842712474619
+getSucc 1 1
+occupied 1 1
+cost 1 1 2 0
+trueDist 2 0 3 1
+trueDist 0 1 2 0
+getG 2 0
+heuristic 2 0 3 1
+eightCondist 2 0 3 1
+return aux G 1.4142135623730951
+close 2.8284271247461903 Infinity
+cost 1 1 1 0
+trueDist 1 0 3 1
+trueDist 0 1 1 0
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+close 3.414213562373095 2.8284271247461903
+cost 1 1 0 0
+trueDist 0 0 3 1
+trueDist 0 1 0 0
+getG 0 0
+heuristic 0 0 3 1
+eightCondist 0 0 3 1
+return aux G 3.414213562373095
+close 4.82842712474619 2.8284271247461903
+cost 1 1 0 1
+trueDist 0 1 3 1
+trueDist 0 1 0 1
+getG 0 1
+return G VALOR 3.82842712474619
+close 4.82842712474619 2.8284271247461903
+cost 1 1 0 2
+trueDist 0 2 3 1
+trueDist 0 1 0 2
+getG 0 2
+heuristic 0 2 3 1
+eightCondist 0 2 3 1
+return aux G 3.414213562373095
+close 4.82842712474619 2.8284271247461903
+cost 1 1 1 2
+trueDist 1 2 3 1
+trueDist 0 1 1 2
+getG 1 2
+heuristic 1 2 3 1
+eightCondist 1 2 3 1
+return aux G 2.414213562373095
+close 3.414213562373095 2.8284271247461903
+cost 1 1 2 2
+trueDist 2 2 3 1
+trueDist 0 1 2 2
+getG 2 2
+heuristic 2 2 3 1
+eightCondist 2 2 3 1
+return aux G 1.4142135623730951
+close 2.8284271247461903 2.8284271247461903
+cost 1 1 2 1
+trueDist 2 1 3 1
+trueDist 0 1 2 1
+getG 2 1
+return G VALOR Infinity
+close Infinity 2.8284271247461903
+getSucc 2 0
+occupied 2 0
+cost 2 0 3 -1
+trueDist 3 -1 3 1
+trueDist 0 1 3 -1
+getG 3 -1
+heuristic 3 -1 3 1
+eightCondist 3 -1 3 1
+return aux G 2.0
+close 3.414213562373095 Infinity
+cost 2 0 2 -1
+trueDist 2 -1 3 1
+trueDist 0 1 2 -1
+getG 2 -1
+heuristic 2 -1 3 1
+eightCondist 2 -1 3 1
+return aux G 2.414213562373095
+close 3.414213562373095 3.414213562373095
+cost 2 0 1 -1
+trueDist 1 -1 3 1
+trueDist 0 1 1 -1
+getG 1 -1
+heuristic 1 -1 3 1
+eightCondist 1 -1 3 1
+return aux G 2.8284271247461903
+close 4.242640687119286 3.414213562373095
+cost 2 0 1 0
+trueDist 1 0 3 1
+trueDist 0 1 1 0
+getG 1 0
+heuristic 1 0 3 1
+eightCondist 1 0 3 1
+return aux G 2.414213562373095
+close 3.414213562373095 3.414213562373095
+cost 2 0 1 1
+trueDist 1 1 3 1
+trueDist 0 1 1 1
+getG 1 1
+return G VALOR 2.8284271247461903
+close 4.242640687119286 3.414213562373095
+cost 2 0 2 1
+trueDist 2 1 3 1
+trueDist 0 1 2 1
+getG 2 1
+return G VALOR Infinity
+close Infinity 3.414213562373095
+cost 2 0 3 1
+trueDist 3 1 3 1
+trueDist 0 1 3 1
+getG 3 1
+return G VALOR 0.0
+close 1.4142135623730951 3.414213562373095
+cost 2 0 3 0
+trueDist 3 0 3 1
+trueDist 0 1 3 0
+getG 3 0
+heuristic 3 0 3 1
+eightCondist 3 0 3 1
+return aux G 1.0
+close 2.0 1.4142135623730951
+getPath
+x: 0 y: 1
+x: 1 y: 1
+x: 2 y: 0
+x: 3 y: 1
