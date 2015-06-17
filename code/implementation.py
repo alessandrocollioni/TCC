@@ -14,7 +14,8 @@
 #        lista.append(Point(point.x,point.y))
 #        if point.x <= 0 :
 #            lista.append(Point(point.x,point.y+1))
-#        if point.x <= 500 :
+#        if point.x <= 500 :UMEROS DE ESTADOS EXPANDIDOS A-Star: 0
+
 #            lista.append(Point(point.x,point.y-1))
 #        if point.y <= 0 :
 #            lista.append(Point(point.x+1,point.y))
@@ -23,6 +24,8 @@
 #        return lista
 
 import collections
+
+
 
 class Graph():
     def __init__(self, width, height):
@@ -111,9 +114,12 @@ def dijkstra_search(graph, start, goal):
     cost_so_far = {}
     came_from[start] = None
     cost_so_far[start] = 0
+    countOpenList = 0
+
     
     while not frontier.empty():
         current = frontier.get()
+        countOpenList = countOpenList + 1
         
         if current == goal:
             break
@@ -125,7 +131,8 @@ def dijkstra_search(graph, start, goal):
                 priority = new_cost
                 frontier.put(next, priority)
                 came_from[next] = current
-    
+
+    print 'NUMEROS DE ESTADOS EXPANDIDOS dijkstra:', countOpenList
     return came_from, cost_so_far
 
 def reconstruct_path(came_from, start, goal):
@@ -149,13 +156,13 @@ def a_star_search(graph, start, goal):
     cost_so_far = {}
     came_from[start] = None
     cost_so_far[start] = 0
-    
+    countOpenList = 0
+
     while not frontier.empty():
         current = frontier.get()
-        
         if current == goal:
             break
-        
+        countOpenList = countOpenList + 1
         for next in graph.neighbors(current):
             new_cost = cost_so_far[current] + graph.cost(current, next)
             if next not in cost_so_far or new_cost < cost_so_far[next]:
@@ -164,5 +171,8 @@ def a_star_search(graph, start, goal):
                 priority = new_cost + heuristic(goal, next)
                 frontier.put(next, priority)
                 came_from[next] = current
-    
+                
+
+    print 'NUMEROS DE ESTADOS EXPANDIDOS A-Star:', countOpenList
     return came_from, cost_so_far;
+

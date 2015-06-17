@@ -8,8 +8,8 @@ include "../bigbob.inc"
 # configure the GUI window
 window
 (
-	size [700.000 700.000]
-	scale 35
+	size [700 700]
+	scale 42.350
 )
 
 
@@ -18,8 +18,8 @@ floorplan
 (
 	name "cave"
 	bitmap "../bitmaps/cave.png"
-	size [15 15 1.5]
-	ranger_return 1
+	size [15.000 15.000 1.500]
+	ranger_return 1.000
 	obstacle_return 1
 )
 
@@ -28,7 +28,7 @@ floorplan
 bigbob
 (
 	name "bob1"
-	pose [-5 -6 0 90]
+	pose [-5.015 -5.365 0.000 179.010]
 	color "green"
 )
 

@@ -44,6 +44,5 @@ define bigbob position
 		z [0 1] 
 	) 
 	drive "diff"
-	bigbob_laser( ) 
-	bigbob_laser( ) 
+	bigbob_laser()
 )

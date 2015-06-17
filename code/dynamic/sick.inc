@@ -12,7 +12,7 @@ define sicksensor sensor
 
 define sickcommon ranger
 (
-  color "blue"
+  color "red"
   size [ 0.156 0.155 0.19 ] # dimensions from LMS200 data sheet	
  )
 

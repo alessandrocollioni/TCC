@@ -92,8 +92,8 @@ define wanderer bigbob
 pucbot (name "r0"  pose [ -6.5 -6.5 0 45.000 ]  )
 
 wanderer (name "r1"  pose [ 0 -6 0 120.000 ]  )
-wanderer (name "r2"  pose [ 3 6 0 0 ]  )
-wanderer (name "r3"  pose [ 5 -3 0 20.000 ]  )
-wanderer (name "r4"  pose [ -6 3 0 120.000 ]  )
+#wanderer (name "r2"  pose [ 3 6 0 0 ]  )
+#wanderer (name "r3"  pose [ 5 -3 0 20.000 ]  )
+#wanderer (name "r4"  pose [ -6 3 0 120.000 ]  )
 
 
