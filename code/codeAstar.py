@@ -9,6 +9,7 @@
 # to run controller - "python bb_goto.py" in another window
 
 import sys,os,math
+import time
 import cv2
 import cv as cv
 import numpy as np
@@ -190,11 +191,18 @@ def geraImagem(mapa, position, goal):
     #grafo.setObstacles(img,  10, 10)
     #ptGoal = (5,5)
     #ptRobot = (1,1)
+
+    ini = time.time()
     (came_from, cost_so_far) = a_star.a_star_search(grafo, ptRobot, ptGoal)
+    fim = time.time()
+    print "A* Time: ", fim-ini
+
     
     if ptGoal in came_from :
         path =  a_star.reconstruct_path(came_from, ptRobot, ptGoal)
         path.reverse()
+        print "QUANTIDADE DE PASSOS", len(path) 
+        raw_input('Position Goal in X?')
         return path
     else :
         print 'sem rota para o destino: ', goal
@@ -234,7 +242,7 @@ p.ResetOdometry()
 #p.GoTo(gx,gy,ga)
 
 # tolerancia em relacao ao objetivo
-distance_epsilon = 0.3
+distance_epsilon = 0.5
 angle_epsilon = dtor(5)
 
 path = None
@@ -266,13 +274,42 @@ while ( abs(  (p.GetYaw()-ga) > angle_epsilon ) ):
 
 # Now stop
 p.SetSpeed(0.0, 0.0)
-
+'''-6,-6 >>> -5,-5
+NUMEROS DE ESTADOS EXPANDIDOS A-Star: 184
+A* Time:  0.00214791297913
+QUANTIDADE DE PASSOS 24
+-
+NUMEROS DE ESTADOS EXPANDIDOS A-Star: 184
+A* Time:  0.00232791900635
+QUANTIDADE DE PASSOS 24
+-
+NUMEROS DE ESTADOS EXPANDIDOS A-Star: 184
+A* Time:  0.00219106674194
+QUANTIDADE DE PASSOS 24
+'''
+################
+'''-5,-5 >>> -6,-6
+NUMEROS DE ESTADOS EXPANDIDOS A-Star: 264
+A* Time:  0.00241088867188
+QUANTIDADE DE PASSOS 34
+-
+NUMEROS DE ESTADOS EXPANDIDOS A-Star: 264
+A* Time:  0.00230312347412
+QUANTIDADE DE PASSOS 34
+-
+NUMEROS DE ESTADOS EXPANDIDOS A-Star: 264
+A* Time:  0.00371408462524
+QUANTIDADE DE PASSOS 34
+'''
 
 #print 'NUMEROS DE ESTADOS EXPANDIDOS A-Star:', a_star.funcCountOpenList() 
 #QUANTIDADE DE PASSOS PARA ATINGIR O OBJETIVO(-5,-5) - 149 | 144 | 144
 #QUANTIDADE DE PASSOS PARA ATINGIR O OBJETIVO(-6,-6) - 171 | 171 | 168 
 #VIZINHOS VISITADOS(-6, -6) - 264 | 264 | 264
 #VIZINHOS VISITADOS(-5, -5) - 224 | 224 | 224
+#A* Time:  0.00226998329163
+#QUANTIDADE DE PASSOS 29
+
 #264
 
 

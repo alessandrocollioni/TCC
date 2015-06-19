@@ -9,6 +9,7 @@
 # to run controller - "python bb_goto.py" in another window
 
 import sys,os,math
+import time
 import cv2
 import cv as cv
 import numpy as np
@@ -255,7 +256,10 @@ def callD_Star(mapa, position, goal, pathFind):
     print'na Iamgem: ptRobot: (%.1f,%.1f), ptGoal: (%.1f,%.1f)' % (ptRobot[0], ptRobot[1], ptGoal[0], ptGoal[1])
 
     #findObstD_Star(mapa, imgEroded, ptRobot, ptGoal, pathFind)
+    ini = time.time()
     pf.init(ptRobot[0],ptRobot[1],ptGoal[0],ptGoal[1]);
+    fim = time.time()
+    print "INIT D*:", ptGoal, fim-ini
 
 def UpdateDstar(mapa, position, pathFind):
     posicaoRoboX = Pos_mapToImg((position.GetXPos()), mapa, True) 
@@ -265,9 +269,15 @@ def UpdateDstar(mapa, position, pathFind):
 
     pf.updateStart(ptRobot[0],ptRobot[1])
     print "replan"
+    ini = time.time()
     pf.replan();
+    fim = time.time()
+    print "REPLAN D*:", fim-ini
 
     path = pf.getPath();
+
+    print "QUANTIDADE DE PASSOS", len(path) 
+    raw_input('Position Goal in X?')
     #for i in path:
     #    print"x: ", i.x, " y: ", i.y;
     
@@ -363,8 +373,7 @@ Goal = (int(raw_input('Position Goal in X?')),int(raw_input('Position Goal in Y?
 
 callD_Star(m, p, Goal, pf)
 #UpdateDstar(m, p, pf)
-print 'NUMEROS DE ESTADOS EXPANDIDOS:', pf.openListCount
-raw_input('Position Goal in X?')
+
 
 auxiliar = np.zeros((m.GetHeight(),m.GetWidth(),1), np.uint8)
 '''for valor in range(400,500) :
@@ -431,6 +440,34 @@ while ( abs(  (p.GetYaw()-ga) > angle_epsilon ) ):
     c.Read()    
 
 print 'NUMEROS DE ESTADOS EXPANDIDOS:', pf.openListCount
+
+'''-6,-6 >>> -5,-5
+INIT D*: (83, 417) 8.48770141602e-05
+REPLAN D*: 0.019161939621
+QUANTIDADE DE PASSOS 24
+-------
+INIT D*: (83, 417) 0.000204086303711
+REPLAN D*: 0.0203518867493
+QUANTIDADE DE PASSOS 24
+-------
+INIT D*: (83, 417) 6.89029693604e-05
+REPLAN D*: 0.0193190574646
+QUANTIDADE DE PASSOS 24
+'''
+#################
+'''-5,-5 >>> -6,-6  
+INIT D*: (50, 450) 0.000102043151855
+REPLAN D*: 0.025542974472
+QUANTIDADE DE PASSOS 34
+-------
+INIT D*: (50, 450) 9.20295715332e-05
+REPLAN D*: 0.0258178710938
+QUANTIDADE DE PASSOS 34
+-------
+INIT D*: (50, 450) 7.60555267334e-05
+REPLAN D*: 0.0258409976959
+QUANTIDADE DE PASSOS 34
+'''
 #1836
 #QUANTIDADE DE PASSOS PARA ATINGIR O OBJETIVO_1(-6,-6) - 134 | 134 | 134
 #QUANTIDADE DE PASSOS PARA ATINGIR O OBJETIVO_1(-5,-5) - 34  | 33  | 29
@@ -442,6 +479,13 @@ print 'NUMEROS DE ESTADOS EXPANDIDOS:', pf.openListCount
 #VIZINHOS VISITADOS_N(-5, -5) - 1400 | 2016 | 1848
 #QUANTIDADE DE REPLANEJAMENTO(-5,-5) - 8
 #QUANTIDADE DE REPLANEJAMENTO(-5,-5) - 7
+#init(-5,-5) - 7.79628753662e-05
+#replan(-5,-5) - 0.0240190029144
+#init(-6,-6) - 7.70092010498e-05
+#replan(-6,-6) - 0.02676820755
+
+
+
 
             
 # Now stop

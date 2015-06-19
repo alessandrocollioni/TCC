@@ -162,9 +162,10 @@ def a_star_search(graph, start, goal):
         current = frontier.get()
         if current == goal:
             break
-        countOpenList = countOpenList + 1
+        
         for next in graph.neighbors(current):
             new_cost = cost_so_far[current] + graph.cost(current, next)
+            countOpenList = countOpenList + 1
             if next not in cost_so_far or new_cost < cost_so_far[next]:
                 #print 'current: (%d,%d)' % next
                 cost_so_far[next] = new_cost
