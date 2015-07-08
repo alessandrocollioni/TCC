@@ -304,6 +304,20 @@ A* Time:  3.77994918823
 QUANTIDADE DE PASSOS 1796
 NO MAPA: PT_ROBOT: (-28.2,33.9), PT_GOAL: (-175.0,-45.0)
 NA IMAGEM: PT_ROBOT: (1338.0,272.0), PT_GOAL: (194.0,1024.0)
+################################################################################
+Robot size: (1.000,1.250,0.000)
+Map size: (3117,1189), origem: (-1558,-594), resolution (m/cell) 1.000)
+Position Goal in X?150
+Position Goal in Y?-30
+sw: (5.256)
+no mapa: ptRobot: (-176.0,-30.1)
+na Iamgem: ptRobot: (186.0,881.0), ptGoal: (2726.0,881.0)
+NUMEROS DE ESTADOS EXPANDIDOS A-Star: 730914
+A* Time:  1.69764089584
+QUANTIDADE DE PASSOS 2543
+NO MAPA: PT_ROBOT: (-176.0,-30.1), PT_GOAL: (150.0,-30.0)
+NA IMAGEM: PT_ROBOT: (186.0,881.0), PT_GOAL: (2726.0,881.0)
+
 '''
 ###############
 '''-6,-6 >>> -5,-5

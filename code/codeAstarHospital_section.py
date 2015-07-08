@@ -292,7 +292,18 @@ while ( abs(  (p.GetYaw()-ga) > angle_epsilon ) ):
 # Now stop
 p.SetSpeed(0.0, 0.0)
 '''
-
+Robot size: (1.000,1.250,0.000)
+Map size: (1086,443), origem: (-543,-221), resolution (m/cell) 1.000)
+Position Goal in X?-44
+Position Goal in Y?-8
+sw: (9.360)
+no mapa: ptRobot: (44.9,17.9)
+na Iamgem: ptRobot: (1031.0,63.0), ptGoal: (65.0,293.0)
+NUMEROS DE ESTADOS EXPANDIDOS A-Star: 975381
+A* Time:  2.00703501701
+QUANTIDADE DE PASSOS 1094
+NO MAPA: PT_ROBOT: (44.9,17.9), PT_GOAL: (-44.0,-8.0)
+NA IMAGEM: PT_ROBOT: (1031.0,63.0), PT_GOAL: (65.0,293.0)
 '''
 #############
 '''-6,-6 >>> -5,-5
