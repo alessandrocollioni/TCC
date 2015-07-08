@@ -18,6 +18,7 @@ import implementation as a_star
 # On linux, you can find this out with "locate playerc.py"
 sys.path.append('/usr/local/lib64/python2.7/site-packages/')
 from DStarLiteJava import DStarLite
+from copy import deepcopy
 from playercpp import *
 
 
@@ -260,26 +261,40 @@ def callD_Star(mapa, position, goal, pathFind):
     pf.init(ptRobot[0],ptRobot[1],ptGoal[0],ptGoal[1]);
     fim = time.time()
     print "INIT D*:", ptGoal, fim-ini
+     
+    #for valor in range(0,m.GetWidth()-m.GetWidth()/2) :
+    #    pf.updateCell( m.GetWidth()/2,valor, -1)
+
 
 def UpdateDstar(mapa, position, pathFind):
     posicaoRoboX = Pos_mapToImg((position.GetXPos()), mapa, True) 
     posicaoRoboY = Pos_mapToImg(position.GetYPos(), mapa, False)
-    print "new point", pf.s_start.x, pf.s_start.y
+    
     ptRobot =  (int(posicaoRoboX), int(posicaoRoboY))
-
-    pf.updateStart(ptRobot[0],ptRobot[1])
+    if  not (pf.s_start.x == ptRobot[0] and pf.s_start.y == ptRobot[1]):
+        '''
+        A B AandB AorB
+        V V   V     V 
+        V F   F     V
+        F V   F     V
+        F F   F     F
+        '''
+        print "updateStart:(", pf.s_start.x, ",", pf.s_start.y, ") to ", ptRobot
+        pf.updateStart(ptRobot[0],ptRobot[1])
     print "replan"
     ini = time.time()
-    pf.replan();
+    if pf.replan() == False :
+
+        return []
     fim = time.time()
     print "REPLAN D*:", fim-ini
 
     path = pf.getPath();
 
     print "QUANTIDADE DE PASSOS", len(path) 
-    raw_input('Position Goal in X?')
-    #for i in path:
-    #    print"x: ", i.x, " y: ", i.y;
+    #raw_input('Position Goal in X?')
+    for i in path:
+        print"x: ", i.x, " y: ", i.y;
     
     return path
 
@@ -298,19 +313,19 @@ def leSensorDstar(read, position, mapa):
 
             PosObjX = math.cos(AngObjeto) * (read.GetRange(sensor)) + position.GetXPos()
             PosObjY = math.sin(AngObjeto) * (read.GetRange(sensor)) + position.GetYPos()
-            PosObjImgX = Pos_mapToImg(PosObjX,mapa, True)
-            PosObjImgY = Pos_mapToImg(PosObjY,mapa, False)
+            PosObjImgX = int(Pos_mapToImg(PosObjX,mapa, True))
+            PosObjImgY = int(Pos_mapToImg(PosObjY,mapa, False))
             #print "robo", position.GetXPos(), position.GetYPos(), "obstaculos", PosObjImgX, PosObjImgY
 
-            if PosObjImgX > 500 :
-                PosObjImgX = 499
-            if PosObjImgY > 500:
-                PosObjImgY = 499
-
-            #print "LOL_X",PosObjX ,"LOL_Y",PosObjY
+            if PosObjImgX > m.GetWidth() - 1:
+                PosObjImgX = m.GetWidth() - 1
+            if PosObjImgY > m.GetHeight() - 1:
+                PosObjImgY = m.GetHeight() - 1
+            #print "m.GetHeight()", m.GetHeight(), m.GetWidth()
+            #print "LOL_X",PosObjImgY ,"LOL_Y",PosObjImgX
             if auxiliar[PosObjImgY][PosObjImgX] != 255 :
                 auxiliar[PosObjImgY][PosObjImgX] = 255
-                pf.updateCell(PosObjImgX, PosObjImgY, -1)
+                pf.updateCell( PosObjImgX, PosObjImgY, -1)
 
                 varBreak = 1
     return varBreak
@@ -374,25 +389,31 @@ Goal = (int(raw_input('Position Goal in X?')),int(raw_input('Position Goal in Y?
 callD_Star(m, p, Goal, pf)
 #UpdateDstar(m, p, pf)
 
-
 auxiliar = np.zeros((m.GetHeight(),m.GetWidth(),1), np.uint8)
 '''for valor in range(400,500) :
     pf.updateCell( 250,valor, -1)'''
 contador = 0
-
+contadorGOTO = 0
 while 1 :
     print 'laco 0'
     #imprime = "auxiliar"
     #imprime += 'contador'
+    posicaoRoboX = Pos_mapToImg((p.GetXPos()), m, True) 
+    posicaoRoboY = Pos_mapToImg(p.GetYPos(), m, False)    
     
-    path = None
-    varBreak = leSensorDstar(s, p, m)
-    path = UpdateDstar(m, p, pf)
+    
+    #varBreak = leSensorDstar(s, p, m)
     '''for waypoint in path :
         imprimeO(waypoint.x,waypoint.y,auxiliar)'''
     varBreak = 0
-    cv2.imwrite("auxiliar"+str(Goal)+str(contador)+".png", auxiliar);
+    debug = deepcopy(auxiliar)
+    imprimeR(posicaoRoboX,posicaoRoboY,debug)
+    cv2.imwrite("auxiliar"+str(Goal)+str(contador)+".png", debug);
+    cv2.imwrite("auxiliar"+str(Goal)+str(contador)+"-1.png", auxiliar);
     contador = contador +1
+
+    path = None
+    path = UpdateDstar(m, p, pf)
     #raw_input('Position Goal in X?')
 
     for waypoint in path :
@@ -409,9 +430,11 @@ while 1 :
         #gy = math.ceil(-Pos_imgToMap(waypoint[1], m, False))
 
         print'Pos_imgToMap( %.3f, %.3f). gx&gy ( %.3f, %.3f)' % ((Pos_imgToMap(waypoint.x, m, True)),(Pos_imgToMap(waypoint.y, m, False)), gx, gy )
+        print "posAtual", p.GetXPos(), p.GetYPos()
         #print'Pos_imgToMap( %.3f, %.3f). gx&gy ( %.3f, %.3f)' % ((Pos_imgToMap(waypoint[0], m, True)),(Pos_imgToMap(waypoint[1], m, False)), gx, gy )
 
         p.GoTo(gx,gy,p.GetYaw())
+        contadorGOTO = contadorGOTO + 1
         #varBreak = 0
         while ( math.sqrt( (p.GetXPos()-gx)**2+ (p.GetYPos()-gy)**2) > distance_epsilon):
             print 'laco 1'
@@ -419,15 +442,24 @@ while 1 :
             varBreak = leSensorDstar(s, p, m)
             c.Read()
 
+            #while True :
+            print "Alessandro"
+            print "contador goto", contadorGOTO, "posAtual", p.GetXPos(), p.GetYPos(), "objetivo", gx, gy
+            #p.SetSpeed(0.0, 0.0)
+
+
+
             
             if varBreak :
+                #p.SetSpeed(0.0, 0.0)
+                #c.Read()
                 break
 
 
             # p.GetStall() eh interessante para detectar colisao do robo
             print 'Current pose (%.3f %.3f %.3f), waypoint (%.3f %.3f %.3f), Goal %.3f, %.3f' %\
                     (p.GetXPos(),p.GetYPos(),p.GetYaw(),gx,gy,ga, Goal[0], Goal[1])
-
+        c.Read()
         if varBreak :
             break
         print 'done waypoint' 

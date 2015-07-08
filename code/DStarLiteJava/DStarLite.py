@@ -79,7 +79,7 @@ class DStarLite():
 	 * @params start and goal coordinates
 	'''
 	def init( self, sX, sY, gX, gY):
-		#print "init",sX, sY, gX, gY
+		#print"init",sX, sY, gX, gY
 	
 		self.cellHash.clear();
 		self.path = []
@@ -116,13 +116,13 @@ class DStarLite():
 	 * As per [S. Koenig, 2002]
 	'''
 	def _calculateKey(self, u):
-		#print "calculateKey",u.x, u.y
+		#print"calculateKey",u.x, u.y
 	
 		val = min(self._getRHS(u), self._getG(u));
 
 		u.k.setFirst((val + self._heuristic(u,self.s_start) + self.k_m));
 		u.k.setSecond(val);
-		
+		#print"end calculateKey",u.x, u.y
 		return u;
 	
 
@@ -130,20 +130,20 @@ class DStarLite():
 	 * Returns the rhs value for state u.
 	'''
 	def _getRHS( self, u):
-		#print "getRHS",u.x, u.y
+		#print"getRHS",u.x, u.y
 	
 		if (u.eq(self.s_goal)):
-			#print "return value RHS", 0
+			#print"return value RHS", 0
 			return 0;
 
 		#if the cellHash doesn't contain the State u
 
 		for k, v in self.cellHash.iteritems():
 			if k.x == u.x and k.y == u.y:
-				#print "return rhs RHS", v.rhs
+				#print"return rhs RHS", v.rhs
 				return v.rhs;
 		aux = self._heuristic(u, self.s_goal);
-		#print "return aux RHS", aux
+		#print"return aux RHS", aux
 		return aux
 
 		'''if (cellHash.get(u) == null)
@@ -155,15 +155,15 @@ class DStarLite():
 	 * Returns the g value for the state u.
 	'''
 	def _getG( self, u):
-		#print "getG",u.x, u.y
+		#print"getG",u.x, u.y
 	
 		#if the cellHash doesn't contain the State u
 		for k, v in self.cellHash.iteritems():
 			if k.x == u.x and k.y == u.y:
-				#print "return G VALOR", v.g
+				#print"return G VALOR", v.g
 				return v.g;
 		aux = self._heuristic(u,self.s_goal);
-		#print "return aux G", aux
+		#print"return aux G", aux
 		return aux
 		'''if (cellHash.get(u) == null)
 			return heuristic(u,s_goal);
@@ -175,7 +175,7 @@ class DStarLite():
 	 * scaled by a constant C1 (should be set to <= min cost)
 	'''
 	def _heuristic( self, a,  b):
-		#print "heuristic",a.x, a.y, b.x, b.y
+		#print"heuristic",a.x, a.y, b.x, b.y
 	
 		return self._eightCondist(a,b)*self.C1;
 	
@@ -184,7 +184,7 @@ class DStarLite():
 	 * Returns the 8-way distance between state a and state b
 	'''
 	def _eightCondist( self, a,  b):
-		#print "eightCondist",a.x, a.y, b.x, b.y
+		#print"eightCondist",a.x, a.y, b.x, b.y
 	
 		temp = None;
 		min = math.fabs(a.x - b.x);
@@ -194,22 +194,29 @@ class DStarLite():
 			temp = min;
 			min = max;
 			max = temp;
-		
+		#print"eightCondist RETURN",((self.M_SQRT2-1.0)*min + max);
 		return ((self.M_SQRT2-1.0)*min + max);
 
 	
 
 	def replan(self):
-		print "replan"
+		#print"replan"
 	
 		self.path = []
 
+		#for lol in self.openList:
+		#	print "OPEN LIST", lol.x, lol.y, "K - ", lol.k.first(), lol.k.second()
+
 		res = self._computeShortestPath();
 
-		print "end from computeShortestPath"
+
+		#for lol in self.openList:
+		#	print "APOS OPEN LIST", lol.x, lol.y, "K - ", lol.k.first(), lol.k.second()
+
+		#print"end from computeShortestPath"
 		if (res < 0):
 		
-			print("No Path to Goal");
+			print("No Path to Goal LOLO");
 			return False;
 		
 
@@ -218,7 +225,7 @@ class DStarLite():
 
 		if (self._getG(self.s_start) == float("inf")):
 		
-			print("No Path to Goal");
+			print("No Path to Goal LOLA");
 			return False;
 		
 
@@ -230,7 +237,7 @@ class DStarLite():
 
 			if (len(n) == 0):
 			
-				print ("No Path to Goal");
+				print ("No Path to Goal LOL");
 				return False;
 
 			
@@ -280,7 +287,7 @@ class DStarLite():
 		return self.s_start
 
 	def _computeShortestPath(self):
-		print "computeShortestPath"
+		#print"computeShortestPath"
 	
 		s = [];
 
@@ -292,17 +299,18 @@ class DStarLite():
 			
 			if (k > self.maxSteps) :
 				print("At maxsteps");
-				k += 1
 				return -1;
 			k += 1
-			print "##### WHILE ##### ", k
+			#print"##### WHILE #####", k
+
+			#print "len ", len(self.openList), "primeiro da lista", self.openList[0].x,self.openList[0].y
+			#for lol in self.openList:
+				#print"VARIAVEL LOL", lol.x, lol.y, lol.k.first(), lol.k.second()
 
 			test = (self._getRHS(self.s_start) != self._getG(self.s_start));
 
 			#lazy remove
 			while(True) :
-				#for lol in self.openList:
-					#print "VARIAVEL LOL", lol.x, lol.y, lol.k.first(), lol.k.second()
 				#print "len of openList", len(self.openList)
 				if (len(self.openList) == 0):
 					#print "return in 1"
@@ -312,12 +320,15 @@ class DStarLite():
 				#print "while", u.x, u.y
 				if (not self._isValid(u)):
 					continue;
+				
 				if (not (u.lt(self.s_start)) and (not test)):
 					return 2;
 				break;
 			
-
-			del self.openHash[u];
+			#print "TAMANHO DO openHash", len (self.openHash)
+			self.openHash.pop(u, None)
+			#del self.openHash[u];
+			#print "TAMANHO DO openHash", len (self.openHash)
 
 			k_old = clsState.State.fromState(u);
 
@@ -335,7 +346,7 @@ class DStarLite():
 					#print "###### end G>RHS ######"
 				
 				else: 						 # g <= rhs, state has got worse
-					#print "###### senao ######"
+					#print "###### senao ######", u.x, u.y
 					self._setG(u, float("inf"));
 					s = self._getPred(u);
 
@@ -345,6 +356,7 @@ class DStarLite():
 					self._updateVertex(u);
 					#print "###### end senao ######"
 			
+			#print"##### END WHILE #####", k
 		 #while
 		return 0;
 	
@@ -355,7 +367,7 @@ class DStarLite():
 	 * the cell is self._occupied, in which case it has no successors.
 	'''
 	def _getSucc( self, u):
-		#print "getSucc", u.x, u.y
+		#print"getSucc", u.x, u.y
 	
 		s = [];
 		#tempState;
@@ -391,7 +403,7 @@ class DStarLite():
 	 * neighbours for state u. self._occupied neighbours are not added to the list
 	'''
 	def _getPred( self, u):
-		#print "getPred", u.x, u.y
+		#print"getPred", u.x, u.y
 	
 		s = [];
 
@@ -429,7 +441,7 @@ class DStarLite():
 	 * This does not force a replan.
 	'''
 	def updateStart( self, x,  y):
-		#print "updateStart", x, y
+		#print"updateStart", x, y
 	
 		self.s_start.x = x;
 		self.s_start.y = y;
@@ -450,7 +462,7 @@ class DStarLite():
 	 * going to use.
 	'''
 	def updateGoal( self, x,  y):
-		#print "updateGoal", x, y
+		#print"updateGoal", x, y
 	
 		toAdd = [];
 		#tempPoint;
@@ -508,7 +520,7 @@ class DStarLite():
 	 * As per [S. Koenig, 2002]
 	'''
 	def _updateVertex( self, u):
-		#print "updateVertex", u.x, u.y
+		#print"updateVertex", u.x, u.y
 	
 		s = [];
 
@@ -528,7 +540,7 @@ class DStarLite():
 
 		if (not self._close(self._getG(u),self._getRHS(u))):
 			self._insert(u);
-		#print "end updateVertex", u.x, u.y
+		#print"end updateVertex", u.x, u.y
 	
 
 	'''
@@ -536,14 +548,17 @@ class DStarLite():
 	 * it is in the hash table.
 	'''
 	def _isValid( self, u):
-		#print "isValid", u.x, u.y
+		#print"isValid", u.x, u.y
 	
 
 		for k, v in self.openHash.iteritems():
 			if k.x == u.x and k.y == u.y:
 				if (not self._close(self._keyHashCode(k),v)):
+					#print"isValid", u.x, u.y, "RETURN FALSE 1"
 					return False;
+				#print"isValid", u.x, u.y, "RETURN TRUE 1"
 				return True;
+		#print"isValid", u.x, u.y, "RETURN FALSE 2"
 		return False
 		
 		'''if (openHash.get(u) == null) return false;
@@ -554,12 +569,12 @@ class DStarLite():
 	 * Sets the G value for state u
 	'''
 	def _setG( self, u,  g):
-		#print "setG", u.x, u.y, g
+		#print"setG", u.x, u.y, g
 	
 		self.makeNewCell(u);
 		for k, v in self.cellHash.iteritems():
 			if k.x == u.x and k.y == u.y:
-				self.cellHash[k].g = g
+				v.g = g
 		'''self.cellHash.get(u).g = g;'''
 	
 
@@ -567,7 +582,7 @@ class DStarLite():
 	 * Sets the rhs value for state u
 	'''
 	def _setRHS( self, u,  rhs):
-		#print "setRHS", u.x, u.y, rhs
+		#print"setRHS", u.x, u.y, rhs
 	
 		self.makeNewCell(u);
 
@@ -582,7 +597,7 @@ class DStarLite():
 	 * Checks if a cell is in the hash table, if not it adds it in.
 	'''
 	def makeNewCell( self, u):
-		#print "makeNewCell", u.x, u.y
+		#print"makeNewCell", u.x, u.y
 	
 		for k, v in self.cellHash.iteritems():
 			if k.x == u.x and k.y == u.y:
@@ -597,7 +612,7 @@ class DStarLite():
 	 * updateCell as per [S. Koenig, 2002]
 	'''
 	def updateCell( self, x, y, val):
-		#print "updateCell", x, y, val
+		#print"updateCell", x, y, val
 	
 		u = clsState.State.fromNone();
 		u.x = x;
@@ -615,13 +630,19 @@ class DStarLite():
 
 		'''cellHash.get(u).cost = val;'''
 		self._updateVertex(u);	
-		#print("########## END UPDATE ##########");
+		#print("########## END UPDATE CELL ##########");
 
 	'''
 	 * self._inserts state u into openList and openHash
 	'''
 	def _insert( self, u):
-		#print "insert", u.x, u.y
+		#print"insert", u.x, u.y
+
+		for k, v in self.openHash.iteritems():
+			if k.x == u.x and k.y == u.y:
+				u = k
+				break
+			k = u
 	
 		#iterator cur
 		#csum;
@@ -635,8 +656,11 @@ class DStarLite():
 		# bug somewhere else and having duplicates in the openList queue
 		# hides the problem...
 		#if ((cur != self.openHash.end()) and (self._close(csum,cur->second))) return;
-
 		self.openHash[u] = csum;
+
+		#print"with", u.x, u.y, "OPEN HASH VALUE is:", csum
+		#for k, v in self.openHash.iteritems():
+			#print"CHAVE VALOR:", k.x, k.y, v
 
 		'''integer = 0
 		if len(self.openList) != 0:
@@ -647,7 +671,8 @@ class DStarLite():
 		self.openList.insert(integer, u)'''
 
 		self.openList.append(u);
-		self.openList.sort(key=lambda a: a.k.first())
+		self.openList.sort(key=lambda a: a)
+		#self.openList.sort(key=lambda a: a.k.first())
 		'''
 		for lol in self.openList:
 			print "VARIAVEL LOLA", lol.x, lol.y, lol.k.first(), lol.k.second()
@@ -658,7 +683,7 @@ class DStarLite():
 	 * a state that has been updated
 	'''
 	def _keyHashCode( self, u):
-		#print "keyHashCode", u.x, u.y
+		#print"keyHashCode", u.x, u.y
 	
 		return (float)(u.k.first() + 1193*u.k.second())
 	
@@ -668,7 +693,7 @@ class DStarLite():
 	 * otherwise. Non-traversable are marked with a cost < 0
 	'''
 	def _occupied( self, u):
-		#print "occupied", u.x, u.y
+		#print"occupied", u.x, u.y
 	
 		#if the cellHash does not contain the State u
 		for k, v in self.cellHash.iteritems():
@@ -687,7 +712,7 @@ class DStarLite():
 	 * Euclidean cost between state a and state b
 	'''
 	def _trueDist( self, a, b):
-		#print "trueDist", a.x, a.y, b.x, b.y
+		#print"trueDist", a.x, a.y, b.x, b.y
 		x = a.x-b.x;
 		y = a.y-b.y;
 		return math.sqrt(x*x + y*y);
@@ -699,7 +724,7 @@ class DStarLite():
 	 * former. This is also the 8-way cost.
 	'''
 	def _cost( self, a, b):
-		#print "cost", a.x, a.y, b.x, b.y
+		#print"cost", a.x, a.y, b.x, b.y
 	
 		xd = math.fabs(a.x-b.x);
 		yd = math.fabs(a.y-b.y);
@@ -720,15 +745,17 @@ class DStarLite():
 	 * Returns true if x and y are within 10E-5, False otherwise
 	'''
 	def _close( self, x, y):
-		#print "close", x, y
+		#print"close", x, y
 	
 		if (x == float("inf") and y == float("inf")):
+			#print"close", x, y, "RETURN TRUE"
 			return True;
+		#print"close", x, y, "RETURN", (math.fabs(x-y) < 0.00001);
 		return (math.fabs(x-y) < 0.00001);
 	
 
 	def getPath(self):
-		#print "getPath"
+		#print"getPath"
 		return self.path;
 	
 
@@ -738,14 +765,37 @@ class DStarLite():
 def main():
 
 	pf = DStarLite();
-	pf.init(0,49,99,49);
+	#pf.init(0,401,800,401);
+	pf.init(1,1,49,49);
+	pf.replan();
+	path = pf.getPath();
+	print "NEW START", path[10].x, path[10].y
+	pf.updateStart(path[10].x, path[10].y)
 	#pf.updateCell(0, 1, -1);
-	pf.updateCell(2, 1, -1);
+	'''pf.updateCell(2, 1, -1);
 	pf.updateCell(2, 0, -1);
 	pf.updateCell(2, 2, -1);
-	pf.updateCell(3, 0, -1);''''''
-	for x in xrange(1,99):
-		pf.updateCell(49, x, -1);''''''
+	pf.updateCell(3, 0, -1);'''
+	'''for i in range(-1,801):
+		pf.updateCell(0, i, -100);
+		pf.updateCell(800, i, -100);
+		pf.updateCell(i, 0, -100);
+		pf.updateCell(i, 800, -100);'''
+	
+
+	##obstaculos
+	'''for i in range(100,800):
+		pf.updateCell(400, i, -1);
+		pf.updateCell(600, i, -1);'''
+	
+	for i in range(0,40):
+		pf.updateCell(25, i, -1);
+	
+	'''
+
+	
+	for x in range(1,99):
+		pf.updateCell(49, x, -1);'''
 
 	print("Start node: (0,1)");
 	print("End node: (3,1)");
@@ -761,7 +811,7 @@ def main():
 	#print("Time: " + (end-begin) + "ms");
 
 	path = pf.getPath();
-	cont = 0
+	'''cont = 0
 	for i in path:
 		print"x: ", i.x, " y: ", i.y, " cont: ", cont;
 		cont = cont + 1;
@@ -779,10 +829,10 @@ def main():
 
 	pf.replan();
 	
-	path = pf.getPath();
+	path = pf.getPath();'''
 	cont = 0
 	for i in path:
-		print"x: ", i.x, " y: ", i.y, " cont: ", cont;
+		print"x:", i.x, "y:", i.y
 		cont = cont + 1;
 	
 

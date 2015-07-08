@@ -49,7 +49,7 @@ class State():
 	
 
 	#CompareTo Method. self is necessary when self class is used in a priority queue
-	def compareTo(self, that):
+	def __cmp__(self, that):
 	
 		#self is a modified version of the gt method
 		other = that;
@@ -57,18 +57,18 @@ class State():
 			return 1;
 		else:
 			if (self.k.first() < other.k.first()-0.00001): return -1;
-			if (self.k.second() > other.k.second()): return 1;
-			else: 
-				if (self.k.second() < other.k.second()): return -1;
-			return 0;
+		if (self.k.second() > other.k.second()): return 1;
+		else: 
+			if (self.k.second() < other.k.second()): return -1;
+		return 0;
 	
 
 	#Override the CompareTo function for the HashMap usage
 	#@Override
-	def hashCode(self):
-	
+	def __hash__(self):
 		return self.x + 34245*self.y;
-	
+
+		
 
 	#@Override 
 	def equals(self, aThat) :
@@ -113,5 +113,3 @@ class State():
 		self.y = y;
 		self.k = k;
 		
-
-

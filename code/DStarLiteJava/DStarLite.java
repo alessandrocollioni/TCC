@@ -42,7 +42,7 @@ public class DStarLite implements java.io.Serializable{
 	//Default constructor
 	public DStarLite()
 	{
-		maxSteps	= 80000;
+		maxSteps	= 8000000;
 		C1			= 1;
 	}
 
@@ -99,7 +99,7 @@ public class DStarLite implements java.io.Serializable{
 
 		u.k.setFirst (val + heuristic(u,s_start) + k_m);
 		u.k.setSecond(val);
-
+		//System.out.println("end calculateKey " + u.x +" "+ u.y);
 		return u;
 	}
 
@@ -111,17 +111,17 @@ public class DStarLite implements java.io.Serializable{
 		System.out.println("getRHS " + u.x +" "+ u.y);
 		double aux = -20;
 		if (u == s_goal){
-			System.out.println("return value RHS "+ 0);
+			//System.out.println("return value RHS "+ 0);
 			return 0;	
 		} 
 
 		//if the cellHash doesn't contain the State u
 		if (cellHash.get(u) == null){
 			aux = heuristic(u, s_goal);
-			System.out.println("return aux RHS "+ aux);
+			//System.out.println("return aux RHS "+ aux);
 			return aux;
 		}
-		System.out.println("return rhs RHS "+ cellHash.get(u).rhs);
+		//System.out.println("return rhs RHS "+ cellHash.get(u).rhs);
 		return cellHash.get(u).rhs;
 	}
 
@@ -135,10 +135,10 @@ public class DStarLite implements java.io.Serializable{
 		//if the cellHash doesn't contain the State u
 		if (cellHash.get(u) == null){
 			aux = heuristic(u,s_goal);
-			System.out.println("return aux G "+ aux);
+			//System.out.println("return aux G "+ aux);
 			return aux;
 		}
-		System.out.println("return G VALOR "+ cellHash.get(u).g);
+		//System.out.println("return G VALOR "+ cellHash.get(u).g);
 		return cellHash.get(u).g;
 	}
 
@@ -167,6 +167,8 @@ public class DStarLite implements java.io.Serializable{
 			min = max;
 			max = temp;
 		}
+		//System.out.println("eightCondist RETURN " + ((M_SQRT2-1.0)*min + max));
+		
 		return ((M_SQRT2-1.0)*min + max);
 
 	}
@@ -177,7 +179,7 @@ public class DStarLite implements java.io.Serializable{
 		path.clear();
 
 		int res = computeShortestPath();
-		System.out.println("end from computeShortestPath");
+		//System.out.println("end from computeShortestPath");
 		if (res < 0)
 		{
 			System.out.println("No Path to Goal");
@@ -258,7 +260,10 @@ public class DStarLite implements java.io.Serializable{
 				return -1;
 			}
 
-			System.out.println("##### WHILE ##### "+ k);
+			/*System.out.println("##### WHILE ##### "+ k);
+			for (State lol : openList) {
+				System.out.println("VARIAVEL LOL "+ lol.x+" "+ lol.y+" "+ lol.k.first()+" "+ lol.k.second() );
+			}*/
 
 			State u;
 
@@ -266,16 +271,14 @@ public class DStarLite implements java.io.Serializable{
 
 			//lazy remove
 			while(true) {
-				for (State lol : openList) {
-					System.out.println("VARIAVEL LOL "+ lol.x+" "+ lol.y+" "+ lol.k.first()+" "+ lol.k.second() );
-				}
-				System.out.println("len of openList "+ openList.size());
+				
+				//System.out.println("len of openList "+ openList.size());
 				if (openList.isEmpty()){
-					System.out.println("return in 1");
+					//System.out.println("return in 1");
 					return 1;
 				}
 				u = openList.poll();
-				System.out.println("while "+ u.x+" "+ u.y);
+				//System.out.println("while "+ u.x+" "+ u.y);
 				if (!isValid(u)) continue;
 				if (!(u.lt(s_start)) && (!test)) return 2;
 				break;
@@ -286,19 +289,19 @@ public class DStarLite implements java.io.Serializable{
 			State k_old = new State(u);
 
 			if (k_old.lt(calculateKey(u))) { //u is out of date
-				System.out.println("###### IN LT ######");
+				//System.out.println("###### IN LT ######");
 				insert(u);
-				System.out.println("###### end IN LT ######");
+				//System.out.println("###### end IN LT ######");
 			} else if (getG(u) > getRHS(u)) { //needs update (got better)
-				System.out.println("###### G>RHS ######");
+				//System.out.println("###### G>RHS ######");
 				setG(u,getRHS(u));
 				s = getPred(u);
 				for (State i : s) {
 					updateVertex(i);
 				}
-				System.out.println("###### end G>RHS ######");
+				//System.out.println("###### end G>RHS ######");
 			} else {						 // g <= rhs, state has got worse
-				System.out.println("###### senao ######");
+				//System.out.println("###### senao ######");
 				setG(u, Double.POSITIVE_INFINITY);
 				s = getPred(u);
 
@@ -306,8 +309,9 @@ public class DStarLite implements java.io.Serializable{
 					updateVertex(i);
 				}
 				updateVertex(u);
-				System.out.println("###### end senao ######");
+				//System.out.println("###### end senao ######");
 			}
+			//System.out.println("##### END WHILE ##### "+ k);
 		} //while
 		return 0;
 	}
@@ -474,7 +478,7 @@ public class DStarLite implements java.io.Serializable{
 		}
 
 		if (!close(getG(u),getRHS(u))) insert(u);
-		System.out.println("end updateVertex " + u.x +" "+ u.y);
+		//System.out.println("end updateVertex " + u.x +" "+ u.y);
 	}
 
 	/*
@@ -484,8 +488,15 @@ public class DStarLite implements java.io.Serializable{
 	private boolean isValid(State u)
 	{
 		System.out.println("isValid " + u.x +" "+ u.y);
-		if (openHash.get(u) == null) return false;
-		if (!close(keyHashCode(u),openHash.get(u))) return false;
+		if (openHash.get(u) == null){
+			//System.out.println("isValid " + u.x +" "+ u.y+ " RETURN FALSE 2");
+			return false;
+		} 
+		if (!close(keyHashCode(u),openHash.get(u))){
+			//System.out.println("isValid " + u.x +" "+ u.y+ " RETURN FALSE 1");
+			return false;
+		} 
+		//System.out.println("isValid " + u.x +" "+ u.y+ " RETURN TRUE");
 		return true;
 	}
 
@@ -537,7 +548,7 @@ public class DStarLite implements java.io.Serializable{
 		makeNewCell(u);
 		cellHash.get(u).cost = val;
 		updateVertex(u);
-		System.out.println("########## END UPDATE ##########");
+		//System.out.println("########## END UPDATE CELL ##########");
 	}
 
 	/*
@@ -560,11 +571,19 @@ public class DStarLite implements java.io.Serializable{
 		//if ((cur != openHash.end()) && (close(csum,cur->second))) return;
 
 		openHash.put(u, csum);
+		/*System.out.println("with " + u.x + " " + u.y + " OPEN HASH VALUE is: " + csum);
+		for (Map.Entry<State, Float> entry : openHash.entrySet()) {
+		    State key = entry.getKey();
+		    Float value = entry.getValue();
+		    System.out.println("CHAVE VALOR: "+ key.x+ " "+ key.y+ " "+ value);
+		    // ...
+		}*/
+		
 		openList.add(u);
 
-		for (State lol : openList) {
+		/*for (State lol : openList) {
 			System.out.println("VARIAVEL LOLA "+ lol.x+" "+ lol.y+" "+ lol.k.first()+" "+ lol.k.second() );
-		}
+		}*/
 		
 	}
 
@@ -626,7 +645,11 @@ public class DStarLite implements java.io.Serializable{
 	private boolean close(double x, double y)
 	{
 		System.out.println("close " + x +" "+ y );
-		if (x == Double.POSITIVE_INFINITY && y == Double.POSITIVE_INFINITY) return true;
+		if (x == Double.POSITIVE_INFINITY && y == Double.POSITIVE_INFINITY){
+			//System.out.println("close " + x +" "+ y +" RETURN TRUE");
+			return true;
+		} 
+		//System.out.println("close " + x +" "+ y +" RETURN " + (Math.abs(x-y) < 0.00001));
 		return (Math.abs(x-y) < 0.00001);
 	}
 
@@ -641,11 +664,33 @@ public class DStarLite implements java.io.Serializable{
 	public static void main(String[] args)
 	{
 		DStarLite pf = new DStarLite();
-		pf.init(0,1,10,1);
-		pf.updateCell(2, 1, -1);
+		//pf.init(0,401,800,401);
+		pf.init(1,1,49,49);
+		pf.replan();
+		List<State> path = pf.getPath();
+		pf.updateStart(path.get(10).x, path.get(10).y);
+		
+		/*for (int i = -1; i < 801; i++) {
+			pf.updateCell(800, i, -1);
+			pf.updateCell(0, i, -1);
+			pf.updateCell(i, 0, -1);
+			pf.updateCell(i, 800, -1);
+		}*/
+		/*pf.updateCell(2, 1, -1);
 		pf.updateCell(2, 0, -1);
 		pf.updateCell(2, 2, -1);
-		pf.updateCell(3, 0, -1);/**/
+		pf.updateCell(3, 0, -1);*/
+
+
+
+		/*for (int i = 800; i > 100; i--) {
+			pf.updateCell(400, i, -1);
+			pf.updateCell(600, i, -1);
+		}*/
+		for (int i = 0; i < 40; i++) {
+			pf.updateCell(25, i, -1);
+		}
+
 
 		System.out.println("Start node: (0,1)");
 		System.out.println("End node: (3,1)");
@@ -660,7 +705,7 @@ public class DStarLite implements java.io.Serializable{
 
 		//System.out.println("Time: " + (end-begin) + "ms");
 
-		List<State> path = pf.getPath();
+		path = pf.getPath();
 		for (State i : path)
 		{
 			System.out.println("x: " + i.x + " y: " + i.y);

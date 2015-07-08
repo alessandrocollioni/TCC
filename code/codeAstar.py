@@ -156,7 +156,7 @@ def geraImagem(mapa, position, goal):
     hip = math.sqrt(math.pow(ConvertMtsToPxls(position.GetSize().sw, mapa, False), 2) + math.pow(ConvertMtsToPxls(position.GetSize().sl, mapa, True), 2))
     print "sw: (%.3f)" % ConvertMtsToPxls(position.GetSize().sw, mapa, False)
     #print "hipotenusa: (%.3f)" % hip
-    erosion_size  = hip
+    erosion_size  = hip+ 0.9
     #print "erosao: (%.3f)" % erosion_size
 
     imgEroded = erode(erosion_size, img)
@@ -172,6 +172,7 @@ def geraImagem(mapa, position, goal):
 
     ptRobot =  (int(posicaoRoboX), int(posicaoRoboY))
     ptGoal = (Pos_mapToImg(goal[0], mapa, True), Pos_mapToImg(goal[1], mapa, False))
+    print "resultado do goal: ", Pos_mapToImg(goal[0], mapa, True)
     #ptGoal = (int(posicaoRoboX) + 60, int(posicaoRoboY))
 
     print'no mapa: ptRobot: (%.1f,%.1f)' % (position.GetXPos(), position.GetYPos())
@@ -181,8 +182,9 @@ def geraImagem(mapa, position, goal):
     grafo.setObstacles(imgEroded,  mapa.GetHeight(), mapa.GetWidth())
     
     imprimeR(posicaoRoboX, posicaoRoboY, imgEroded)
-    imprimeP( 150, 450, imgEroded)
+    #imprimeP( 150, 450, imgEroded)
     imprimeC( mapa.GetWidth() / 2, mapa.GetHeight() / 2, imgEroded)
+    print "GOAL", ptGoal[0], ptGoal[1]
     imprimeO( ptGoal[0], ptGoal[1], imgEroded)
 
     cv2.imwrite("debug.png", imgEroded);
@@ -202,7 +204,7 @@ def geraImagem(mapa, position, goal):
         path =  a_star.reconstruct_path(came_from, ptRobot, ptGoal)
         path.reverse()
         print "QUANTIDADE DE PASSOS", len(path) 
-        raw_input('Position Goal in X?')
+#        raw_input('Position Goal in X?')
         return path
     else :
         print 'sem rota para o destino: ', goal
@@ -300,6 +302,7 @@ QUANTIDADE DE PASSOS 34
 NUMEROS DE ESTADOS EXPANDIDOS A-Star: 264
 A* Time:  0.00371408462524
 QUANTIDADE DE PASSOS 34
+
 '''
 
 #print 'NUMEROS DE ESTADOS EXPANDIDOS A-Star:', a_star.funcCountOpenList() 

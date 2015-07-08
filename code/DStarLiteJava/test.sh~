@@ -14,6 +14,4 @@ java DStarLite >> txt/java.txt
 
 
 meld ./txt/java.txt ./txt/python.txt &
-
 meld ./txt/python.txt ./txt/java.txt &
-
