@@ -6,7 +6,7 @@ Para a execução deve-se utilizar o comando player e escolher o tipo de ambient
 EX1: "player ./dynamic/dynamic.cfg"
 
 ####### Ambiente Estatico #######
-Outra opção para o comando player é utilizar ambientes estaticos, observado no EX2. Em ambientes estaticos foi feito um exemplo com dois robôs, para isso utilizar o comando apresentado no EX3.
+Outra opção para o comando player é utilizar ambientes estaticos, observado no EX2. Em ambientes estaticos foi feito um exemplo com dois robôs, para isso utilizar o comando apresentado no EX3.</br>
 EX2: "player ./static/cave.cfg"</br>
 EX3: "player ./static/mapaLivroIATwoRobot.cfg"
 
